@@ -37,7 +37,7 @@ function() {
     var gleason_six = inRange(measure.gleason_score_6_laboratory_test_result, -Infinity, final_treatment);
     return (low_risk_prostate_cancer && // already checked for treatment above
             (antigens <= MAX_ANTIGEN) &&
-            ((gleason <= MAX_GLEASON) || gleason6));
+            ((gleason <= MAX_GLEASON) || gleason_six));
   }
 
   var numerator = function() {
