@@ -44,7 +44,7 @@ function() {
     var retinopathy_and_macular = actionFollowingSomething (all_encounters,                                   
        measure.severity_of_retinopathy_and_macular_edema_findings_physical_exam_finding, 
        earliest_encounter, effective_date);
-    return (macular_fundus || macular_edema || retinopathy || retinopathy_and_macular);
+    return (macular_fundus && ((macular_edema && retinopathy) || retinopathy_and_macular));
   }
   
   var exclusion = function() {
