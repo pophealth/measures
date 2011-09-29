@@ -39,7 +39,7 @@ function () {
     // < 2 years after the patients' birthdate
     var earliest_vaccine = birthdate + 42 * day;
     var latest_vaccine = birthdate + 2 * year;
-    var number_ipv_vaccine_administered = inRange(unique_dates(measure.ipv_vaccine_medication_administered), earliest_vaccine, latest_vaccine);
+    var number_ipv_vaccine_administered = inRange(unique_dates(measure.ipv_medication_administered), earliest_vaccine, latest_vaccine);
     var number_ipv_vaccine_procedure = inRange(unique_dates(measure.ipv_vaccination_procedure_performed), earliest_vaccine, latest_vaccine);
 
     return (number_ipv_vaccine_administered >= 3 || number_ipv_vaccine_procedure >= 3);

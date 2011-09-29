@@ -12,7 +12,7 @@
       // 4 DTaP vaccines administered: November 15, 16, 17, and 18 in 2009
       "dtap_vaccine_medication_administered": [1258243200, 1258329600, 1258416000, 1258502400],
       // 4 polio (IPV)vaccines administered: November 15, 16, 17, and 18 in 2009
-      "ipv_vaccine_medication_administered": [1258243200, 1258329600, 1258416000, 1258502400],
+      "ipv_medication_administered": [1258243200, 1258329600, 1258416000, 1258502400],
       // 1 MMR vaccines administered September 20, 2009
        "mmr_vaccine_medication_administered":                1253404800,  // Time.gm(2009, 9, 20).to_i
      // 4 H influenza type B (HiB) vaccines administered: November 15, 16, 17, and 18 in 2009
