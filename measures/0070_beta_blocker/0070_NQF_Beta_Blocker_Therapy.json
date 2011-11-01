@@ -3,7 +3,7 @@
   "id": "0070",
   "properties": "NQF_Retooled_Measure_0070.xlsx.json",
   "name": "Coronary Artery Disease (CAD): Beta-Blocker Therapy for CAD Patients with Prior Myocardial Infarction (MI)",
-  "description": "Percentage of patients aged 18 years and older with a diagnosis of CAD and prior MI who were prescribed beta‐blocker therapy.",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of CAD and prior MI who were prescribed beta-blocker therapy.",
   "category": "Heart conditions",
   "steward": "AMA",
   "parameters": {

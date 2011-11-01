@@ -3,7 +3,7 @@
   "id": "0068",
   "properties": "NQF_Retooled_Measure_0068.xlsx.json",
   "name": "Ischemic Vascular Disease (IVD): Use of Aspirin or another Antithrombotic",
-  "description": "The percentage of patients 18 years of age or older who were discharged alive for acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous transluminal coronary angioplasty (PTCA) from January 1–November 1 of the year prior to the measurement year, omr who had a diagnosis of ischemic vascular disease (IVD) during the measurement year and the year prior to the measurement year and who had documentation of use of aspirin or another antithrombotic during the measurement year.",
+  "description": "The percentage of patients 18 years of age or older who were discharged alive for acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous transluminal coronary angioplasty (PTCA) from January 1-November 1 of the year prior to the measurement year, omr who had a diagnosis of ischemic vascular disease (IVD) during the measurement year and the year prior to the measurement year and who had documentation of use of aspirin or another antithrombotic during the measurement year.",
   "category": "Heart conditions",
   "steward": "NCQA",
   "parameters": {

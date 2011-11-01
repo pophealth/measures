@@ -3,7 +3,7 @@
   "id": "0002",
   "name": "Appropriate Testing for Children with Pharyngitis",
   "properties": "NQF_Retooled_Measure_0002.xlsx.json",
-  "description": "The percentage of children 2‐18 years of age who were diagnosed with Pharyngitis, dispensed an antibiotic and received a group A streptococcus (strep) test for the episode.",
+  "description": "The percentage of children 2-18 years of age who were diagnosed with Pharyngitis, dispensed an antibiotic and received a group A streptococcus (strep) test for the episode.",
   "category": "Miscellaneous",
   "steward": "NCQA",
   "parameters": {

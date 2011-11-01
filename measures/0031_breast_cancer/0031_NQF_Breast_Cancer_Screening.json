@@ -3,7 +3,7 @@
   "id": "0031",
   "properties": "NQF_Retooled_Measure_0031.xlsx.json",
   "name": "Breast Cancer Screening",
-  "description": "The percentage of women 40–69 years of age who had a mammogram to screen for breast cancer.",
+  "description": "The percentage of women 40-69 years of age who had a mammogram to screen for breast cancer.",
   "category": "Women's Health",
   "steward": "NCQA",
   "parameters": {
