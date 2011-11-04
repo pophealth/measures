@@ -10,7 +10,7 @@ function () {
   var effective_date = <%= effective_date %>;
   var measurement_period_start = effective_date - 1*year;
   /*
-	AND: “Patient characteristic: birth date” >= 50 and <= 74 years (from beginning of measurement period) to 
+	AND: "Patient characteristic: birth date" >= 50 and <= 74 years (from beginning of measurement period) to 
 	      expect screening for patients within one year after reaching 50 years until 75 years;
    */
   var latest_birthdate = measurement_period_start - 50*year;
