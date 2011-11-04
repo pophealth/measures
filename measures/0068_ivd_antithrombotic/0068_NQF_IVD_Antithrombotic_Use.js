@@ -12,7 +12,7 @@ function() {
   var effective_date =        <%= effective_date %>;
 
   var measurement_period_start =  effective_date - year;
-  var latest_birthdate =          measurement_period_start - (17 * year); // patients who will reach the age of 18 during the “measurement period”
+  var latest_birthdate =          measurement_period_start - (17 * year); // patients who will reach the age of 18 during the "measurement period"
 
   var earliest_encounter =  effective_date - (2 *  year);
   var latest_encounter =    effective_date - (1 *  year) - (61 * day);
@@ -20,7 +20,7 @@ function() {
   var latest_procedure =    effective_date - (1 *  year) - (61 * day);
 
   // The percentage of patients 18 years of age and older who were discharged alive for acute myocardial infarction (AMI),
-  // coronary artery bypass graft (CABG) or percutaneous transluminal coronary angioplasty (PTCA) from January 1–November 1
+  // coronary artery bypass graft (CABG) or percutaneous transluminal coronary angioplasty (PTCA) from January 1-November 1
   // of the year prior to the measurement year, or who had a diagnosis of ischemic vascular disease (IVD) during the
   // measurement year and the year prior to the measurement year and who had documentation of use of aspirin or another
   // antithrombotic during the measurement year.

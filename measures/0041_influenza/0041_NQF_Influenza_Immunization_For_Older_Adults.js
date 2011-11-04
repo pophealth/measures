@@ -10,7 +10,7 @@ function() {
 
   var period_end = new Date(effective_date*1000);
   var earliest_birthdate = new Date(period_end);
-  // Patient characteristic: birth date” (age) >= 50 years; (before measurement period)
+  // Patient characteristic: birth date (age) >= 50 years; (before measurement period)
   // This is 50 years before measurement period, or 51years before measurement period end
   
   earliest_birthdate.setFullYear(period_end.getFullYear()-51);
