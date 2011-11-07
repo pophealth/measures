@@ -7,6 +7,9 @@
   "addresses": [<%= address %>],
   "patient_id": "<%= (0...10).map{ ('0'..'9').to_a[rand(10)] }.join.to_s %>",
   "birthdate": <%= between(Time.gm(1936, 1, 1), Time.gm(1993, 12, 31)) %>,
+  <% race_ethnicity = race_and_ethnicity %>
+  "race": { "code": "<%= race_ethnicity[:race]%>", "code_set": "CDC-RE" },
+  "ethnicity": { "code": "<%= race_ethnicity[:ethnicity]%>", "code_set": "CDC-RE" },
   <% tobacco_user = percent(30) %>
   <% known_tobacco_user = tobacco_user && percent(80) %>
   "events": {

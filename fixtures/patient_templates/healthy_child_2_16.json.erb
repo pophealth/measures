@@ -8,6 +8,9 @@
   "patient_id": "<%= (0...10).map{ ('0'..'9').to_a[rand(10)] }.join.to_s %>",
   <% birthdate = between(Time.gm(1995, 1, 1), Time.gm(2009, 1, 1)) %>
   "birthdate": <%= birthdate %>,
+  <% race_ethnicity = race_and_ethnicity %>
+  "race": { "code": "<%= race_ethnicity[:race]%>", "code_set": "CDC-RE" },
+  "ethnicity": { "code": "<%= race_ethnicity[:ethnicity]%>", "code_set": "CDC-RE" },
   "events": {
     "encounters": [
       "dummy"
