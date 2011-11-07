@@ -3,7 +3,7 @@
   "id": "0575",
   "properties": "NQF_Retooled_Measure_0575.xlsx.json",
   "name": "Diabetes HbA1c Control < 8%",
-  "description": "The percentage of patients 18–75 years of age with diabetes (type 1 or type 2) who had HbA1c < 8.0%.",
+  "description": "The percentage of patients 18-75 years of age with diabetes (type 1 or type 2) who had HbA1c < 8.0%.",
   "category": "Diabetes",
   "steward": "NCQA",
   "parameters": {
@@ -54,7 +54,7 @@
               },
               {
                 "category": "Encounter",
-                "title": "Non‐Acute Inpatient, Outpatient, or Ophthalmology, during the measurement period" 
+                "title": "Non-Acute Inpatient, Outpatient, or Ophthalmology, during the measurement period" 
               } 
             ] 
           } 
@@ -88,7 +88,7 @@
                   },
                   {
                     "category": "Encounter",
-                    "title": "No Non‐Acute Inpatient, Outpatient, or Ophthalmology, <=2 years before or simultaneously to measurement period end date" 
+                    "title": "No Non-Acute Inpatient, Outpatient, or Ophthalmology, <=2 years before or simultaneously to measurement period end date" 
                   } 
                 ] 
               } 
@@ -118,7 +118,7 @@
               },
               {
                 "category": "Encounter",
-                "title": "Non‐Acute Inpatient, Outpatient, or Opthalmology, <=2 years before or simultaneously to measurement period end date" 
+                "title": "Non-Acute Inpatient, Outpatient, or Opthalmology, <=2 years before or simultaneously to measurement period end date" 
               } 
             ] 
           } 

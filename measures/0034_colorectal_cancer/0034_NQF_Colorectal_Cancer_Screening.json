@@ -3,7 +3,7 @@
   "id": "0034",
   "properties": "NQF_Retooled_Measure_0034.xlsx.json",
   "name": "Colorectal Cancer Screening",
-  "description": "The percentage of adults 50–75 years of age who had appropriate screening for colorectal cancer.",
+  "description": "The percentage of adults 50-75 years of age who had appropriate screening for colorectal cancer.",
   "category": "Cancer",
   "steward": "NCQA",
   "parameters": {

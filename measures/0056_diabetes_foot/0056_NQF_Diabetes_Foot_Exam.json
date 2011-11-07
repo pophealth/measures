@@ -3,7 +3,7 @@
   "id": "0056",
   "properties": "NQF_Retooled_Measure_0056.xlsx.json",
   "name": "Diabetes Foot Exam",
-  "description": "The percentage of patients aged 18‐75 years with diabetes (type 1 or type 2) who had a foot exam (visual inspection, sensory exam with monofilament, or pulse exam).",
+  "description": "The percentage of patients aged 18-75 years with diabetes (type 1 or type 2) who had a foot exam (visual inspection, sensory exam with monofilament, or pulse exam).",
   "category": "Diabetes",
   "steward": "NCQA",
   "parameters": {
@@ -54,7 +54,7 @@
               },
               {
                 "category": "Encounter",
-                "title": "Non‐Acute Inpatient, Outpatient, or Ophthalmology, during the measurement period" 
+                "title": "Non-Acute Inpatient, Outpatient, or Ophthalmology, during the measurement period" 
               } 
             ] 
           } 
@@ -88,7 +88,7 @@
                   },
                   {
                     "category": "Encounter",
-                    "title": "No Non‐Acute Inpatient, Outpatient, or Ophthalmology, <=2 years before or simultaneously to measurement period end date" 
+                    "title": "No Non-Acute Inpatient, Outpatient, or Ophthalmology, <=2 years before or simultaneously to measurement period end date" 
                   } 
                 ] 
               } 
@@ -118,7 +118,7 @@
               },
               {
                 "category": "Encounter",
-                "title": "Non‐Acute Inpatient, Outpatient, or Opthalmology" 
+                "title": "Non-Acute Inpatient, Outpatient, or Opthalmology" 
               } 
             ] 
           } 

@@ -3,7 +3,7 @@
   "id": "0074",
   "properties": "NQF_Retooled_Measure_0074.xlsx.json",
   "name": "Coronary Artery Disease (CAD): Drug Therapy for Lowering LDL-Cholesterol",
-  "description": "Percentage of patients aged 18 years and older with a diagnosis of CAD who were prescribed a lipid‐lowering therapy (based on current ACC/AHA guidelines).",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of CAD who were prescribed a lipid-lowering therapy (based on current ACC/AHA guidelines).",
   "category": "Heart conditions",
   "steward": "AMA",
   "parameters": {

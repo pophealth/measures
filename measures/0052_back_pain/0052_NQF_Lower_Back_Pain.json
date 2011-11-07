@@ -3,7 +3,7 @@
   "id": "0052",
   "properties": "NQF_Retooled_Measure_0052.xlsx.json",
   "name": "Low Back Pain: Use of Imaging Studies",
-  "description": "The percentage of patients with a primary diagnosis of low back pain who did not have an imaging study (plain X‐ray, MRI, CT scan) within 28 days of diagnosis.",
+  "description": "The percentage of patients with a primary diagnosis of low back pain who did not have an imaging study (plain X-ray, MRI, CT scan) within 28 days of diagnosis.",
   "category": "Miscellaneous",
   "steward": "NCQA",
   "parameters": {

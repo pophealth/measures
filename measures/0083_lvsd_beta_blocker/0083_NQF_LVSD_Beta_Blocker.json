@@ -3,7 +3,7 @@
   "id": "0083",
   "properties": "NQF_Retooled_Measure_0083.xlsx.json",
   "name": "Heart Failure (HF): Beta-Blocker Therapy for Left Ventricular Systolic Dysfunction (LVSD)",
-  "description": "Percentage of patients aged 18 years and older with a diagnosis of heart failure who also have LVSD (LVEF < 40%) and who were prescribed beta‐blocker therapy.",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of heart failure who also have LVSD (LVEF < 40%) and who were prescribed beta-blocker therapy.",
   "category": "Heart conditions",
   "steward": "AMA",
   "parameters": {

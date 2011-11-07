@@ -3,7 +3,7 @@
   "id": "0018",
   "properties": "NQF_Retooled_Measure_0018.xlsx.json",
   "name": "Controlling High Blood Pressure",
-  "description": "The percentage of patients 18‐85 years of age who had a diagnosis of hypertension and whose BP was adequately controlled during the measurement year.",
+  "description": "The percentage of patients 18-85 years of age who had a diagnosis of hypertension and whose BP was adequately controlled during the measurement year.",
   "category": "Miscellaneous",
   "steward": "NCQA",
   "parameters": {
