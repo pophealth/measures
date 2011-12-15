@@ -10,7 +10,7 @@
   <% race_ethnicity = race_and_ethnicity %>
   "race": { "code": "<%= race_ethnicity[:race]%>", "code_set": "CDC-RE" },
   "ethnicity": { "code": "<%= race_ethnicity[:ethnicity]%>", "code_set": "CDC-RE" },
-  "language": "<%= language %>",
+  "languages": ["<%= language %>"],
   <% tobacco_user = percent(30) %>
   <% known_tobacco_user = tobacco_user && percent(80) %>
   <% month = 30*24*60*60 %>

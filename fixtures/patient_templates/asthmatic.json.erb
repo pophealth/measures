@@ -10,7 +10,7 @@
   <% race_ethnicity = race_and_ethnicity %>
   "race": { "code": "<%= race_ethnicity[:race]%>", "code_set": "CDC-RE" },
   "ethnicity": { "code": "<%= race_ethnicity[:ethnicity]%>", "code_set": "CDC-RE" },
-  "language": "<%= language %>",
+  "languages": ["<%= language %>"],
   "events": {
     "encounters": [
       {
