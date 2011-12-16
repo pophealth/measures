@@ -3,7 +3,8 @@ source :gemcutter
 gem 'quality-measure-engine', :git => 'http://github.com/pophealth/quality-measure-engine.git', :branch => 'develop'
 #gem 'quality-measure-engine', :path=>'../quality-measure-engine'
 
-gem 'bson_ext', :platforms => :mri
+gem 'mongo', '1.5.1'
+gem 'bson_ext', '1.5.1',  :platforms => :mri
 gem 'rake'
 
 group :test do
