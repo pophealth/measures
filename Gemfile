@@ -1,6 +1,7 @@
 source :gemcutter
 
-gem 'quality-measure-engine', :git => 'http://github.com/pophealth/quality-measure-engine.git', :branch => 'develop'
+gem 'quality-measure-engine', '1.0.4'
+#gem 'quality-measure-engine', :git => 'http://github.com/pophealth/quality-measure-engine.git', :branch => 'develop'
 #gem 'quality-measure-engine', :path=>'../quality-measure-engine'
 
 gem 'mongo', '1.5.1'
