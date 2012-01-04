@@ -2,7 +2,6 @@ source :gemcutter
 
 gem 'health-data-standards', :git => 'https://github.com/projectcypress/health-data-standards.git', :branch => 'develop'
 gem 'quality-measure-engine', :git => 'http://github.com/pophealth/quality-measure-engine.git', :branch => 'develop'
-#gem 'quality-measure-engine', :path=>'../quality-measure-engine'
 
 gem 'mongo', '1.5.1'
 gem 'bson_ext', '1.5.1',  :platforms => :mri
@@ -12,7 +11,6 @@ group :test do
   gem 'rspec'
   gem 'jsonschema'
   gem 'awesome_print', :require => 'ap'
-  gem 'metric_fu'
   gem 'sinatra'
   gem 'roo'
   gem 'builder'
