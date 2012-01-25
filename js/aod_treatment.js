@@ -13,7 +13,6 @@ function () {
   var earliest_encounter;
   var earliest_diagnosis;
   var latest_diagnosis;
-  var diagnoses_during_period;
   var inpatient_encounters;
   var encounters;
   var diagnoses_during_encounters;
@@ -29,9 +28,6 @@ function () {
     earliest_diagnosis = effective_date - 1 * year;
     latest_diagnosis = effective_date - 45 * day;
 
-    diagnoses_during_period = selectWithinRange(
-      measure.alcohol_or_drug_dependence_diagnosis_active,
-      earliest_diagnosis, latest_diagnosis);
     inpatient_encounters = normalize(measure.encounter_acute_inpt_encounter,
       measure.encounter_non_acute_inpatient_encounter);
     encounters = normalize(inpatient_encounters, 
@@ -51,8 +47,7 @@ function () {
     first_alcohol_drug_event = Math.min(first_diagnosis_during_encounter,
       first_rehab_and_detox_during_inpatient_encounter);
 
-    return (first_alcohol_drug_event);
-
+    return (first_alcohol_drug_event<Infinity);
   };
 
   root.alcohol_drug_denominator = function (measure) {

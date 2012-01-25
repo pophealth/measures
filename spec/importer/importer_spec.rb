@@ -1,19 +1,35 @@
 require 'ap'
+require 'health-data-standards'
+
+RSpec.configure do |config|
+  # RSpec automatically cleans stuff out of backtraces;
+  # sometimes this is annoying when trying to debug something e.g. a gem
+  config.backtrace_clean_patterns = [
+    /\/lib\d*\/ruby\//,
+    /bin\//,
+    /spec\/spec_helper\.rb/,
+    /lib\/rspec\/(core|expectations|matchers|mocks)/
+  ]
+end 
 
 describe QME::Importer::GenericImporter do
 
   before(:all) do
     @loader = reload_bundle
+    
+    measure_ids = @loader.get_db.collection('measures').find({}, {:fields => {:id => 1}}).map {|r| r['id']}.uniq
+
+    measure_ids.each do |id|
+      QME::Importer::MeasurePropertiesGenerator.instance.add_measure(id, QME::Importer::GenericImporter.new(@loader.get_db.collection('measures').find_one({:id => id})))
+    end
   end
 
   def get_measure_info(c32_file, measure_id)
     doc = Nokogiri::XML(File.new(c32_file))
     doc.root.add_namespace_definition('cda', 'urn:hl7-org:v3')
-    
-    qm = QME::QualityMeasure.new(measure_id);
-    gi = QME::Importer::GenericImporter.new(qm.definition)
-    c32_hash = QME::Importer::PatientImporter.instance.create_c32_hash(doc)
-    gi.parse(c32_hash)
+    patient = HealthDataStandards::Import::C32::PatientImporter.instance.parse_c32(doc)
+    measure_properties = QME::Importer::MeasurePropertiesGenerator.instance.generate_properties(patient)
+    measure_properties[measure_id]
   end
 
   context "when working with the extended NIST example C32 file" do
