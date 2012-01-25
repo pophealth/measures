@@ -22,9 +22,9 @@ function() {
     cabg = (inRange(measure.cabg_procedure_performed, earliest_procedure, latest_procedure)
             &&
             inRange(measure.encounter_acute_inpt_encounter, earliest_encounter, latest_encounter));
-    ivd =  (inRange(measure.ischemic_vascular_disease_diagnosis_active, earliest_procedure, latest_procedure)
+    ivd =  (inRange(measure.encounter_acute_inpt_and_outpt_encounter, earliest_encounter, effective_date)
             &&
-            inRange(measure.encounter_acute_inpt_and_outpt_encounter, earliest_encounter, effective_date));
+            diagnosisDuringEncounter(measure.ischemic_vascular_disease_diagnosis_active, measure.encounter_acute_inpt_and_outpt_encounter, earliest_encounter, effective_date));
     return (ptca || cabg || ami || ivd);
   }
 
