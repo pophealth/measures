@@ -13,9 +13,11 @@ function() {
   var effective_date =        <%= effective_date %>;
 
   var measurement_period_start =  effective_date - year;
-  var earliest_birthdate =        measurement_period_start - (75 * year);
-  var latest_birthdate =          measurement_period_start - (18 * year);
+  // AGE BUG FIXED - AQ (17-74, not 18-85)
+  var earliest_birthdate = earliestBirthdayForThisAge(74, measurement_period_start);
+  var latest_birthdate = latestBirthdayForThisAge(17, measurement_period_start);
 
+  var earliest_encounter = measurement_period_start;
   var earliest_diagnosis =  effective_date - (2 * year);
 
   var population = function() {
@@ -23,7 +25,7 @@ function() {
   }
 
   var denominator = function() {
-    return diabetes_denominator(measure, earliest_diagnosis, effective_date);
+    return diabetes_denominator(measure, earliest_diagnosis, earliest_encounter, effective_date);
   }
 
   // This numerator function is the only code that is specific to this particular 

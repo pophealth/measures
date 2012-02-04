@@ -11,8 +11,8 @@ function() {
   var effective_date = <%= effective_date %>;
 
   var measurement_period_start = effective_date - (1 * year);
-  var latest_birthdate = measurement_period_start - (12 * year);
-  var earliest_birthdate = measurement_period_start - (16 * year);
+  var latest_birthdate =   latestBirthdayForThisAge(12, measurement_period_start);
+  var earliest_birthdate = earliestBirthdayForThisAge(16, measurement_period_start);
 
   var population = function() {
     return((patient.birthdate < latest_birthdate) && (patient.birthdate > earliest_birthdate) &&

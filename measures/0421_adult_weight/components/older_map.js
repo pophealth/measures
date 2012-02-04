@@ -11,7 +11,7 @@ function() {
   var effective_date =        <%= effective_date %>;
 
   var measurement_period_start =  effective_date - (1 * year);
-  var latest_birthdate =          measurement_period_start - (65 * year);
+  var latest_birthdate = latestBirthdayForThisAge(65, measurement_period_start);
   var earliest_encounter =        measurement_period_start - year;
 
   var population = function() {

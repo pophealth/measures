@@ -3,7 +3,7 @@
   "last": "Bloggs",
   "gender": "F",
   "patient_id" : "100335",
-  "birthdate": 622166400, // Time.gm(1989, 9, 19).to_i
+  "birthdate": 619488000, // Time.gm(1989, 8, 19).to_i
   "measures": {                           // bag of measures, one entry per measure
     "0033": {
       "encounter_outpatient_encounter": 1277856000, // Time.gm(2010, 6, 30).to_i

@@ -1,0 +1,14 @@
+{ // checks that it is in the numerator if diagnosed during an encounter
+  "first": "Percival",              // personal data
+  "last": "Pincus",
+  "gender": "M",
+  "patient_id" : "100865",
+  "birthdate": -132624000,      // Time.gm(1965, 10, 19).to_i
+  "measures": {                 // bag of measures, one entry per measure
+    "0086": {
+      "encounter_office_outpatient_consult_encounter": [1275350400,1272672000], // Time.gm(2010,6,1).to_i
+      "primary_open_angle_glaucoma_poag_diagnosis_active": [1275350400], // Time.gm(2010,5,1).to_i
+      "optic_nerve_head_evaluation_procedure_performed": [1275350400]
+    }
+  }
+}

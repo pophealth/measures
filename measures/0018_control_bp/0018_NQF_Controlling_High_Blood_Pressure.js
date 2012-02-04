@@ -11,11 +11,10 @@ function() {
   var effective_date = <%= effective_date %>;
 
   var measurement_period_start = effective_date - 1 * year;
-  var latest_birthdate = measurement_period_start - (18 * year);
-
   var hypertension_diagnosis_end = measurement_period_start + (year / 2);
-  var latest_birthdate = measurement_period_start - 17*year;
-  var earliest_birthdate = measurement_period_start - 84*year;
+
+  var latest_birthdate = latestBirthdayForThisAge(17, measurement_period_start);
+  var earliest_birthdate = earliestBirthdayForThisAge(84, measurement_period_start);
 
   var population = function() {
     return inRange(patient.birthdate, earliest_birthdate, latest_birthdate);

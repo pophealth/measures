@@ -12,9 +12,9 @@ function () {
   var earliest_encounter = effective_date - year;
 
   var measurement_period_start = effective_date - 1 * year;
-  var earliest_birthdate =  measurement_period_start - 18 * year;
-  var latest_birthdate =    measurement_period_start - 2 * year;
-
+  var earliest_birthdate =       earliestBirthdayForThisAge(18, measurement_period_start);
+  var latest_birthdate =         latestBirthdayForThisAge(2, measurement_period_start);
+  
   var meds_prescribed_after_encounter = [];  // computed by denominator, used by numerator
 
   var population = function() {
