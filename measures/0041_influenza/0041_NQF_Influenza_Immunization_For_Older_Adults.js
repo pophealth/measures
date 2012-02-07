@@ -14,7 +14,7 @@ function() {
   measurement_period_start = measurement_period_start.getTime()/1000;
   
   // Patient characteristic: birth date (age) >= 50 years; (before measurement period)
-  var earliest_birthdate = earliestBirthdayForThisAge(50, measurement_period_start);
+  var latest_birthdate = latestBirthdayForThisAge(50, measurement_period_start);
   var earliest_encounter = new Date(period_end);
   earliest_encounter.setFullYear(period_end.getFullYear()-1);
   earliest_encounter = earliest_encounter.getTime()/1000;
@@ -35,7 +35,7 @@ function() {
                                      measure.encounter_nursing_facility_encounter, 
                                      measure.encounter_nursing_discharge_encounter);
     var num_other_encounters = inRange(other_encounters, earliest_encounter, effective_date);
-    return (patient.birthdate <= earliest_birthdate && (num_outpatient_encounters > 1 || num_other_encounters > 0));
+    return (patient.birthdate <= latest_birthdate && (num_outpatient_encounters > 1 || num_other_encounters > 0));
   };
 
   var denominator = function () {
