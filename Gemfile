@@ -3,8 +3,8 @@ source :gemcutter
 gem 'quality-measure-engine', '1.1.0'
 #gem 'quality-measure-engine', :path=>'../quality-measure-engine'
 #gem 'quality-measure-engine', :git => 'http://github.com/pophealth/quality-measure-engine.git', :branch => 'master'
-#gem 'health-data-standards', '0.7.0'
-gem 'health-data-standards', :git => 'https://github.com/projectcypress/health-data-standards.git', :branch => 'master'
+gem 'health-data-standards', '0.7.0'
+#gem 'health-data-standards', :git => 'https://github.com/projectcypress/health-data-standards.git', :branch => 'master'
 
 gem 'activemodel', '3.1.3'
 
