@@ -27,7 +27,7 @@ function () {
     var obgyn_encounter = inRange(measure.encounter_ob_gyn_encounter, earliest_encounter, effective_date);
     var hysterectomies = normalize(measure.hysterectomy_procedure_performed);
     var no_hysterectomy = hysterectomies.length==0 || (_.min(hysterectomies)>=effective_date);
-    return ((outpatient_encounter || obgyn_encounter) && no_hysterectomy);
+    return ((outpatient_encounter==1 || obgyn_encounter==1) && no_hysterectomy);
   }
   
   var numerator = function() {
