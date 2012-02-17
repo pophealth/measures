@@ -1,4 +1,4 @@
-{ // not population since diagnosis is after all encounters
+{ // not population since one encounter
   "first": "Marnie",              // personal data
   "last": "Mason",
   "gender": "F",
@@ -6,8 +6,8 @@
   "birthdate": -132624000,      // Time.gm(1965, 10, 19).to_i
   "measures": {                 // bag of measures, one entry per measure
     "0086": {
-      "encounter_office_outpatient_consult_encounter": [1275350400,1275350401], // Time.gm(2010,6,1).to_i
-      "primary_open_angle_glaucoma_poag_diagnosis_active": [1280620800] // Time.gm(2010,8,1).to_i
+      "encounter_office_outpatient_consult_encounter": [1280620800], // Time.gm(2010,6,1).to_i
+      "primary_open_angle_glaucoma_poag_diagnosis_active": [1280620700] // Time.gm(2010,8,1).to_i
     }
   }
 }

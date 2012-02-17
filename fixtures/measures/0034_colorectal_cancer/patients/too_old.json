@@ -3,7 +3,7 @@
   "last": "Bloggs",
   "gender": "M",
   "patient_id" : "100343",
-  "birthdate": -1106006400, // Time.gm(1934, 12, 15)
+  "birthdate": -1137542400, // Time.gm(1933, 12, 15) (must be 75 by measure period start)
   "measures": {           // bag of measures, one entry per measure
     "0034": {
     }

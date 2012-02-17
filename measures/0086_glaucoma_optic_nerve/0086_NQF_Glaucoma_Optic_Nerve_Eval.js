@@ -11,7 +11,7 @@ function() {
   var effective_date = <%= effective_date %>;
 
   var measurement_period_start =  effective_date - (1 * year);
-  var latest_birthdate = measurement_period_start - (18 * year);
+  var latest_birthdate = latestBirthdayForThisAge(18, measurement_period_start);
 
   var earliest_encounter = effective_date - (1 * year);
   var all_encounters = normalize(
@@ -21,12 +21,9 @@ function() {
     measure.encounter_ophthalmological_services_encounter);
   
   var population = function() {
-    var poag_before_encounter = actionFollowingSomething(
-      measure.primary_open_angle_glaucoma_poag_diagnosis_active, all_encounters, 
-      earliest_encounter, effective_date);
     var encounters_in_range = inRange(all_encounters, earliest_encounter, effective_date);
-    return (patient.birthdate<=latest_birthdate) && poag_before_encounter &&
-      encounters_in_range;
+    var poag_before_encounter = actionFollowingSomething(measure.primary_open_angle_glaucoma_poag_diagnosis_active, all_encounters);
+    return ((patient.birthdate<=latest_birthdate) && (encounters_in_range>=2) && poag_before_encounter);
   }
 
   var denominator = function() {

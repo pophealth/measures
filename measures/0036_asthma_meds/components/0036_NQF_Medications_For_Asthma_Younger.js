@@ -14,8 +14,8 @@ function () {
    AND: “Patient characteristic: birth date” (age) >=4 and <=10 before the “measurement period” to 
          capture all patients who will reach the age of 5 through 11 during the “measurement period”;
   */
-  var earliest_birthdate = measurement_period_start - 10*year;
-  var latest_birthdate = measurement_period_start - 4*year;
+  var earliest_birthdate = earliestBirthdayForThisAge(10, measurement_period_start);
+  var latest_birthdate = latestBirthdayForThisAge(4, measurement_period_start);
 
   var earliest_encounter = effective_date - 1*year;
 

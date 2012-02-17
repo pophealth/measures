@@ -14,8 +14,8 @@ function () {
             AND: “Patient characteristic: birth date” (age) >=15 and <= 23 years (at beginning of measurement period) 
                   to expect screening for patients within one year after reaching 15 years until 24 years;
 */
- var earliest_birthdate = measurement_period_start - 23 * year;
- var latest_birthdate =   measurement_period_start - 15 * year;
+ var earliest_birthdate = earliestBirthdayForThisAge(23, measurement_period_start);
+ var latest_birthdate = latestBirthdayForThisAge(15, measurement_period_start);
   var earliest_encounter = effective_date - 1 * year;
   var pregnancy_tests = normalize(measure.pregnancy_test_laboratory_test_performed,
     measure.pregnancy_test_laboratory_test_result);

@@ -11,7 +11,7 @@ function() {
   var effective_date =        <%= effective_date %>;
 
   var measurement_period_start =  effective_date - (1 * year);
-  var latest_birthdate =          measurement_period_start - (18 * year);
+  var latest_birthdate = latestBirthdayForThisAge(18, measurement_period_start);
 
   var earliest_encounter = effective_date - (1 * year);
   var all_encounters = normalize(

@@ -11,7 +11,7 @@ function() {
   var effective_date =        <%= effective_date %>;
 
   var measurement_period_start =  effective_date - year;
-  var latest_birthdate =          measurement_period_start - (17 * year); // patients who will reach the age of 18 during the "measurement period"
+  var latest_birthdate = latestBirthdayForThisAge(17, measurement_period_start);
 
   var earliest_encounter = effective_date - (2 *  year);
   var latest_encounter =   effective_date - (1 *  year) - (61 * day);

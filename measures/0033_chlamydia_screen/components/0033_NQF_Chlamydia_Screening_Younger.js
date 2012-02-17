@@ -11,11 +11,12 @@ function () {
   var effective_date = <%= effective_date %>;
   var measurement_period_start = effective_date - 1*year;
  /*
-            AND: “Patient characteristic: birth date” (age) >=14 and <= 19 years (at the beginning of the measurement period) to capture all 
+            AND: “Patient characteristic: birth date” (age) >=15 and <= 19 years (at the beginning of the measurement period) to capture all 
             patients who will reach the ages of 15 through 20 years during the measurement period;
  */
-  var earliest_birthdate = measurement_period_start - 19 * year;
-  var latest_birthdate =   measurement_period_start - 14 * year;
+  // AGE BUG FIXED - AQ (latest birthdate 14->15)
+  var earliest_birthdate = earliestBirthdayForThisAge(19, measurement_period_start);
+  var latest_birthdate = latestBirthdayForThisAge(15, measurement_period_start);
   var earliest_encounter = effective_date - 1*year;
   var pregnancy_tests = normalize(measure.pregnancy_test_laboratory_test_performed,
     measure.pregnancy_test_laboratory_test_result);

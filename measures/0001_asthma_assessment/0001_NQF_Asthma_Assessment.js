@@ -9,8 +9,8 @@ function() {
   var year = 365 * 24 * 60 * 60;
   var effective_date =        <%=effective_date %>;
   var measurement_period_start = effective_date - (1 * year);
-  var earliest_birthdate =       measurement_period_start - (40 * year);
-  var latest_birthdate =         measurement_period_start - (5 * year);
+  var earliest_birthdate =       earliestBirthdayForThisAge(40, measurement_period_start);
+  var latest_birthdate =         latestBirthdayForThisAge(5, measurement_period_start);
   
   var population = function() {
       // the number of counts of office encounters and outpatient consults

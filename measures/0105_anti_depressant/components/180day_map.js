@@ -9,7 +9,7 @@ function() {
   var day = 24 * 60 * 60;
   var year = 365 * day;
   var effective_date =        <%= effective_date %>;
-  var latest_birthdate =          effective_date - ((17 * year) + (245 * day));
+  var latest_birthdate = latestBirthdayForThisAge(18, effective_date) - (245 * day);
   var earliest_encounter =        effective_date - ((1 * year) + (245 * day));
   var latest_encounter =          effective_date - (245 * day);
   var first_diagnosis = null;

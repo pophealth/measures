@@ -15,8 +15,8 @@ function () {
     to capture all patients who will reach the age of 12 through 50 during the “measurement period”;
   */
 
-  var earliest_birthdate = measurement_period_start - 49*year;
-  var latest_birthdate = measurement_period_start - 11*year;
+  var earliest_birthdate = earliestBirthdayForThisAge(49, measurement_period_start);
+  var latest_birthdate = latestBirthdayForThisAge(11, measurement_period_start);
   var earliest_encounter = effective_date - 1*year;
 
   var population = function() {

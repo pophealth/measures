@@ -11,8 +11,8 @@ function() {
   var effective_date = <%= effective_date %>;
 
   var measurement_period_start = effective_date - (1 * year);
-  var earliest_birthdate = measurement_period_start - (49 * year);
-  var latest_birthdate = measurement_period_start - (18 * year);
+  var earliest_birthdate = earliestBirthdayForThisAge(49, measurement_period_start);
+  var latest_birthdate = latestBirthdayForThisAge(18, measurement_period_start);
 
   var earliest_encounter = effective_date - (1 * year);
   var first_diagnosis = null;
