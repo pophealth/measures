@@ -11,7 +11,7 @@
       "major_depression_diagnosis_active": [1262304000, 1279152000], // Time.gm(2010, 1, 1).to_i, 2010-07-14 
       "depression_diagnosis_active": [1254355200], // Time.gm(2009, 10, 1).to_i 
       "antidepressant_medications_medication_dispensed": [1262303000,1262305000,1270080000,1270080000],// 2010-01-01, 2010-01-01, 2010-04-01, 2010-04-01, 
-      "antidepressant_medications_medication_ordered": [1262303000,1262305000],// 2010-01-01, 2010-01-01,
+      "antidepressant_medications_medication_order": [1262303000,1262305000],// 2010-01-01, 2010-01-01,
       "antidepressant_medications_medication_active": [1262303000,1262305000] // 2010-01-01, 2010-01-01
       
     }
