@@ -8,7 +8,7 @@
     "standard_concept_id": "N_c452",
     "standard_taxonomy": "GROUPING",
     "standard_taxonomy_version": "",
-    "standard_code_list": "c231, c232, c553",
+    "standard_code_list": "N_c231, N_c232, N_c553",
     "QDS_datatype_specific_attributes": "datetime"
   },
   "N_1895": {
@@ -128,7 +128,7 @@
     "standard_concept_id": "N_c453",
     "standard_taxonomy": "GROUPING",
     "standard_taxonomy_version": "",
-    "standard_code_list": "c176, c221, c223",
+    "standard_code_list": "N_c176, N_c221, N_c223",
     "QDS_datatype_specific_attributes": "datetime"
   },
   "N_799": {
@@ -200,7 +200,7 @@
     "standard_concept_id": "N_c454",
     "standard_taxonomy": "GROUPING",
     "standard_taxonomy_version": "",
-    "standard_code_list": "c225, c226, c556",
+    "standard_code_list": "N_c225, N_c226, N_c556",
     "QDS_datatype_specific_attributes": "datetime"
   },
   "N_1896": {
@@ -248,7 +248,7 @@
     "standard_concept_id": "N_c455",
     "standard_taxonomy": "GROUPING",
     "standard_taxonomy_version": "",
-    "standard_code_list": "c229, c230, c559",
+    "standard_code_list": "N_c229, N_c230, N_c559",
     "QDS_datatype_specific_attributes": "datetime"
   },
   "N_1897": {
@@ -296,7 +296,7 @@
     "standard_concept_id": "N_c456",
     "standard_taxonomy": "GROUPING",
     "standard_taxonomy_version": "",
-    "standard_code_list": "c227, c228, c560",
+    "standard_code_list": "N_c227, N_c228, N_c560",
     "QDS_datatype_specific_attributes": "datetime"
   },
   "N_1898": {
@@ -392,7 +392,7 @@
     "standard_concept_id": "N_c552",
     "standard_taxonomy": "GROUPING",
     "standard_taxonomy_version": "",
-    "standard_code_list": "c159, c27",
+    "standard_code_list": "N_c159, N_c27",
     "QDS_datatype_specific_attributes": "datetime"
   },
   "N_2128": {
