@@ -25,7 +25,7 @@ function() {
   }
 
   var numerator = function() {
-    return inRange(measure.tobacco_user_physical_exam_finding, earliest_tobacco_user, effective_date);
+    return inRange(measure.tobacco_user_patient_characteristic, earliest_tobacco_user, effective_date);
   }
 
   var exclusion = function() {
