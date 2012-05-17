@@ -1252,7 +1252,7 @@
 											<!-- Problem status observation template -->
 											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
 											<statusCode code="active"/>
-											<value xsi:type="CE" code="413322009" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
+											<value xsi:type="CE" code="73425007" codeSystem="2.16.840.1.113883.6.96" displayName="Inactive"/>
 										</observation>
 									</entryRelationship>
 								</observation>

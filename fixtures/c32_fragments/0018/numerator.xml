@@ -342,7 +342,7 @@
                                 <tr ID="CondID-3">
                                     <td>Hypertension</td>
                                     <td>Jan 2010</td>
-                                    <td>Resolved</td>
+                                    <td>Active</td>
                                 </tr>
                             </tbody>
                              <tbody>
@@ -389,7 +389,7 @@
                                             <!-- Problem status observation template -->
                                             <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" displayName="Status"/>
                                             <statusCode code="completed"/>
-                                            <value xsi:type="CE" code="413322009" codeSystem="2.16.840.1.113883.6.96" displayName="Resolved"/>
+                                            <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="Active"/>
                                         </observation>
                                     </entryRelationship>
                                 </observation>
