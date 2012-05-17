@@ -176,7 +176,7 @@
     "standard_concept_id": "A_c382",
     "standard_taxonomy": "GROUPING",
     "standard_taxonomy_version": "",
-    "standard_code_list": "472, A_c221, A_c228",
+    "standard_code_list": "A_c472, A_c221, A_c228",
     "QDS_datatype_specific_attributes": "datetime"
   },
   "A_1308": {
@@ -188,7 +188,7 @@
     "standard_concept_id": "A_c382",
     "standard_taxonomy": "GROUPING",
     "standard_taxonomy_version": "",
-    "standard_code_list": "472, A_c221, A_c228",
+    "standard_code_list": "A_c472, A_c221, A_c228",
     "QDS_datatype_specific_attributes": "datetime"
   },
   "A_7031": {
