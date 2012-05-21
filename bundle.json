@@ -1,3 +1,4 @@
 { 
-  "name":"Meaningful Use Stage 1 Clinical Quality Measures" 
+  "name":"Meaningful Use Stage 1 Clinical Quality Measures" ,
+  "version" : "0.1"
 }
