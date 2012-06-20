@@ -1,0 +1,107 @@
+{
+  "numerator": {
+    "category": "Procedure Performed",
+    "title": "Foot exam, <=2 years before or simultaneously to measurement period end date"
+  },
+  "denominator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication",
+        "title": "Medication Indicative of Diabetes, <=2 years before or simultaneously to measurement period end date"
+      },
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Diagnosis Active",
+            "title": "Diabetes, <=2 years before or simultaneously to measurement period end date"
+          },
+          {
+            "conjunction": "or",
+            "items": [
+              {
+                "category": "Encounter",
+                "title": "Acute Inpatient or ED, during the measurement period"
+              },
+              {
+                "category": "Encounter",
+                "title": "Non-Acute Inpatient, Outpatient, or Ophthalmology, during the measurement period"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "population": {
+    "category": "Patient Characteristic",
+    "title": "18 <= age <= 75"
+  },
+  "exclusions": {
+    "conjunction": "or",
+    "items": [
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Diagnosis",
+            "title": "Polycystic Ovaries, before or simultaneously to measurement period end date"
+          },
+          {
+            "conjunction": "and",
+            "items": [
+              {
+                "category": "Diagnosis NOT Active",
+                "title": "Diabetes, <=2 years before or simultaneously to measurement period end date"
+              },
+              {
+                "conjunction": "or",
+                "items": [
+                  {
+                    "category": "Encounter",
+                    "title": "No Acute Inpatient or ED, <=2 years before or simultaneously to measurement period end date"
+                  },
+                  {
+                    "category": "Encounter",
+                    "title": "No Non-Acute Inpatient, Outpatient, or Ophthalmology, <=2 years before or simultaneously to measurement period end date"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Diagnosis",
+            "title": "Gestational Diabetes or Steroid Induced Diabetes Within 2 years"
+          },
+          {
+            "category": "Medication",
+            "title": "Medications Indicative of Diabetes Within 2 years"
+          },
+          {
+            "category": "Diagnosis",
+            "title": "Diabetes Active within 2 years"
+          },
+          {
+            "conjunction": "or",
+            "items": [
+              {
+                "category": "Encounter",
+                "title": "Acute Inpatient or ED Within 2 years"
+              },
+              {
+                "category": "Encounter",
+                "title": "Non-Acute Inpatient, Outpatient, or Opthalmology"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

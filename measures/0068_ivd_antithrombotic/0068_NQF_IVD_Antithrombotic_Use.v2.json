@@ -1,0 +1,72 @@
+{
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication dispensed",
+        "title": "Oral anti-platelet therapy dispensed, during the measurement period"
+      },
+      {
+        "category": "Medication order",
+        "title": "Oral anti-platelet therapy ordered, during the measurement period"
+      },
+      {
+        "category": "Medication active",
+        "title": "Oral anti-platelet therapy active, during the measurement period"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Procedure Performed",
+        "title": "PTCA performed 14 to 24 months before the measurement period end date"
+      },
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Encounter",
+            "title": "Acute inpatient encounter 14 to 24 months before the measurement period end date"
+          },
+          {
+            "category": "Diagnosis active",
+            "title": "Acute myocardial infarction active during acute inpatient encounter"
+          }
+        ]
+      },
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Encounter",
+            "title": "Acute inpatient encounter 14 to 24 months before the measurement period end date"
+          },
+          {
+            "category": "Procedure performed",
+            "title": "CABG procedure performed 14 to 24 months before the measurement period end date"
+          }
+        ]
+      },
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Encounter",
+            "title": "Acute inpatient and outpatient encounter 0 to 2 years, inclusive, before the measurement period end date"
+          },
+          {
+            "category": "Diagnosis active",
+            "title": "Ischemic vascular disease active during acute inpatient and outpatient encounter"
+          }
+        ]
+      }
+    ]
+  },
+  "population": {
+    "category": "Patient characteristic",
+    "title": "Age >= 17"
+  },
+  "exclusions": {}
+}

@@ -1,0 +1,107 @@
+{
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication order",
+        "title": "Tamoxifen or aromatase inhibitor therapy"
+      },
+      {
+        "category": "Medication active",
+        "title": "Tamoxifen or aromatase inhibitor therapy"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient Characteristic",
+        "title": "Gender Female"
+      },
+      {
+        "category": "Procedure Result",
+        "title": "Breast Cancer Stage IC-IIIC"
+      },
+      {
+        "category": "Procedure result",
+        "title": "breast cancer ER or PR positive"
+      }
+    ]
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Age >= 18 years"
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Diagnosis active",
+            "title": "Active breast cancer"
+          },
+          {
+            "category": "Diagnosis inactive",
+            "title": "Breast cancer history"
+          }
+        ]
+      },
+      {
+        "category": "Encounter",
+        "title": ">= 2 counts of office visit encounter"
+      }
+    ]
+  },
+  "exclusions": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication intolerance",
+        "title": "Tamoxifen or aromatase inhibitor therapy"
+      },
+      {
+        "category": "Medication adverse event",
+        "title": "Tamoxifen or aromatase inhibitor therapy"
+      },
+      {
+        "category": "Medication allergy",
+        "title": "Tamoxifen or aromatase inhibitor therapy"
+      },
+      {
+        "category": "Medication Active",
+        "title": "Gonadotropin-releasing hormone analogue medication"
+      },
+      {
+        "category": "Procedure Performed",
+        "title": "Bilateral oophorectomy"
+      },
+      {
+        "category": "Procedure Performed",
+        "title": "Radiation therapy"
+      },
+      {
+        "category": "Procedure Performed",
+        "title": "Chemotherapy"
+      },
+      {
+        "category": "Diagnosis Active",
+        "title": "Metastatic sites common to breast cancer"
+      },
+      {
+        "category": "Tamoxifen or aromatase inhibitor therapy not done",
+        "title": "Medical reason"
+      },
+      {
+        "category": "Tamoxifen or aromatase inhibitor therapy not done",
+        "title": "Patient reason"
+      },
+      {
+        "category": "Tamoxifen or aromatase inhibitor therapy not done",
+        "title": "System reason"
+      }
+    ]
+  }
+}

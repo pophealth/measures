@@ -1,0 +1,67 @@
+{
+  "numerator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Estimated date of conception 0 to 10 months, inclusive, before live birth delivery procedure"
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Laboratory Test Performed",
+            "title": "HIV Screening 0 to 30 days, inclusive, after first prenatal visit"
+          },
+          {
+            "category": "Laboratory Test Performed",
+            "title": "HIV Screening 0 to 30 days, inclusive, after second prenatal visit"
+          }
+        ]
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Encounter",
+        "title": "Prenatal visit after estimated date of conception"
+      }
+    ]
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Diagnosis Active",
+        "title": "Live birth delivery"
+      },
+      {
+        "category": "Procedure Performed",
+        "title": "Live birth delivery"
+      }
+    ]
+  },
+  "exclusions": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Diagnosis active",
+        "title": "HIV"
+      },
+      {
+        "category": "Diagnosis inactive",
+        "title": "HIV"
+      },
+      {
+        "category": "Laboratory test not done",
+        "title": "medical reason"
+      },
+      {
+        "category": "Laboratory test not done",
+        "title": "patient reason"
+      }
+    ]
+  }
+}

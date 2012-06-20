@@ -1,0 +1,99 @@
+{
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication order",
+        "title": "Chemotherapy for colon cancer"
+      },
+      {
+        "category": "Medication administered",
+        "title": "Chemotherapy for colon cancer"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Procedure result",
+        "title": "Colon cancer stage III"
+      }
+    ]
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Age >= 18 years"
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Diagnosis active",
+            "title": "Colon cancer"
+          },
+          {
+            "category": "Diagnosis inactive",
+            "title": "Colon cancer history"
+          }
+        ]
+      },
+      {
+        "category": "Encounter",
+        "title": ">= 2 counts of office visit"
+      }
+    ]
+  },
+  "exclusions": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Diagnosis active",
+        "title": "Metastatic sites common to colon cancer"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Acute renal insufficiency"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Neutropenia"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Leukopenia"
+      },
+      {
+        "category": "Patient characteristic",
+        "title": "ECOG performance status poor"
+      },
+      {
+        "category": "Medication intolerance",
+        "title": "Chemotherapy for colon cancer"
+      },
+      {
+        "category": "Medication adverse event",
+        "title": "Chemotherapy for colon cancer"
+      },
+      {
+        "category": "Medication allergy",
+        "title": "Chemotherapy for colon cancer"
+      },
+      {
+        "category": "Medication not done",
+        "title": "Medical reason"
+      },
+      {
+        "category": "Medication not done",
+        "title": "Patient reason"
+      },
+      {
+        "category": "Medication not done",
+        "title": "System reason"
+      }
+    ]
+  }
+}

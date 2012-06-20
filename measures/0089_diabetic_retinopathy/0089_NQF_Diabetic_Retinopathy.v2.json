@@ -1,0 +1,80 @@
+{
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Communication",
+            "title": "Provider to provider macular exam findings"
+          },
+          {
+            "category": "Communication",
+            "title": "Provider to provider level of severity of retinopathy findings"
+          }
+        ]
+      },
+      {
+        "category": "Communication",
+        "title": "Provider to provider level of severity of retinopathy and macular edema findings"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Procedure performed",
+        "title": "Macular or fundus exam"
+      }
+    ]
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Age >= 18 years"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Diabetic retinopathy"
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Encounter",
+            "title": ">= 2 counts of office and outpatient consult"
+          },
+          {
+            "category": "Encounter",
+            "title": ">= 2 counts of ophthalmological services"
+          },
+          {
+            "category": "Encounter",
+            "title": ">= 2 counts of nursing facility"
+          },
+          {
+            "category": "Encounter",
+            "title": ">= 2 counts of domiciliary"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Communication not done",
+        "title": "Medical reason"
+      },
+      {
+        "category": "Communication not done",
+        "title": "Patient reason"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Symptom Assessed",
+            "title": "Asthma Daytime Symptoms"
+          },
+          {
+            "category": "Symptom Assessed",
+            "title": "Asthma Nighttime Symptoms"
+          }
+        ]
+      },
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Symptom Assessed",
+            "title": "Asthma Daytime Symptoms Quantified"
+          },
+          {
+            "category": "Symptom Assessed",
+            "title": "Asthma Nighttime Symptoms Quantified"
+          }
+        ]
+      },
+      {
+        "category": "Risk Category/Assessment",
+        "title": "Asthma Symptom Assessment Tool"
+      }
+    ]
+  },
+  "denominator": {},
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient Characteristic",
+        "title": "Age between 5 and 40"
+      },
+      {
+        "category": "Diagnosis",
+        "title": "Active Asthma"
+      },
+      {
+        "category": "Encounter",
+        "title": ">= 2 counts of office or outpatient consult"
+      }
+    ]
+  },
+  "exclusions": {}
+}

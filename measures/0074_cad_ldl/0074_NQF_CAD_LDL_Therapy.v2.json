@@ -1,0 +1,89 @@
+{
+  "numerator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Medication order",
+            "title": "Lipid lowering therapy"
+          },
+          {
+            "category": "Medication active",
+            "title": "Lipid lowering therapy"
+          }
+        ]
+      }
+    ]
+  },
+  "denominator": {},
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Age >= 18 years"
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Diagnosis active",
+            "title": "Coronary artery disease includes MI"
+          },
+          {
+            "category": "Procedure performed",
+            "title": "Cardiac surgery"
+          }
+        ]
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Encounter",
+            "title": ">= 2 counts of outpatient"
+          },
+          {
+            "category": "Encounter",
+            "title": ">= 2 counts of nursing facility"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Laboratory test result",
+        "title": "Last LDL laboratory test value < 130mg/dL"
+      },
+      {
+        "category": "Medication allery",
+        "title": "Lipid lowering therapy"
+      },
+      {
+        "category": "Medication adverse event",
+        "title": "Lipid lowering therapy adverse"
+      },
+      {
+        "category": "Medication intolerance",
+        "title": "Lipid lowering therapy"
+      },
+      {
+        "category": "Medication not done",
+        "title": "Medical reason"
+      },
+      {
+        "category": "Medication not done",
+        "title": "Patient reason"
+      },
+      {
+        "category": "Medication not done",
+        "title": "System reason"
+      }
+    ]
+  }
+}

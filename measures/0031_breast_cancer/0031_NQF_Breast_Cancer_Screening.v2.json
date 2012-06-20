@@ -1,0 +1,43 @@
+{
+  "numerator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Diagnostic Study",
+        "title": "Breast cancer screen performed within 2 years of measurement period end"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Encounter",
+        "title": "Outpatient within 2 years of measurement period end"
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Procedure NOT performed",
+            "title": "Bilateral mastectomy, before measurement period end"
+          },
+          {
+            "category": "Procedure performed",
+            "title": "No more than 1 unilateral mastectomy with no bilateral mastectomy modifier, before measurement period end"
+          }
+        ]
+      }
+    ]
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient Characteristic",
+        "title": "41 <= age <= 68"
+      }
+    ]
+  },
+  "exclusions": {}
+}

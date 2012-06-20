@@ -1,0 +1,137 @@
+{
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication order",
+        "title": "Beta-blocker therapy ordered"
+      },
+      {
+        "category": "Medication active",
+        "title": "Beta-blocker therapy active"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Diagnosis resolved",
+        "title": "Myocardial infarction"
+      }
+    ]
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Age >= 18 years"
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Diagnosis active",
+            "title": "Coronary artery disease without MI"
+          },
+          {
+            "category": "Procedure performed",
+            "title": "Cardiac surgery"
+          }
+        ]
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Encounter",
+            "title": ">= 2 counts of outpatient"
+          },
+          {
+            "category": "Encounter",
+            "title": ">= 2 counts of nursing facility"
+          },
+          {
+            "category": "Encounter",
+            "title": ">= 1 count(s) of inpatient discharge"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Diagnosis active",
+        "title": "Arrhythmia"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Hypotension"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Asthma"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Bradycardia"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Atresia and stenosis of the aorta"
+      },
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Diagnosis active",
+            "title": "Active atrioventricular block"
+          },
+          {
+            "category": "Diagnosis NOT active",
+            "title": "Cardiac pacer in situ"
+          },
+          {
+            "category": "Device NOT applied",
+            "title": "Cardiac pacer"
+          }
+        ]
+      },
+      {
+        "category": "Procedure performed",
+        "title": "Cardiac monitoring"
+      },
+      {
+        "category": "Medication adverse event",
+        "title": "Beta-blocker therapy"
+      },
+      {
+        "category": "Medication allergy",
+        "title": "Beta-blocker therapy"
+      },
+      {
+        "category": "Medication intolerance",
+        "title": "Beta-blocker therapy"
+      },
+      {
+        "category": "Medication not done",
+        "title": "Medical reason"
+      },
+      {
+        "category": "Medication not done",
+        "title": "Patient reason"
+      },
+      {
+        "category": "Medication not done",
+        "title": "System reason"
+      },
+      {
+        "category": "Physical exam finding",
+        "title": ">1 count of heart rate < 50 bpm"
+      }
+    ]
+  }
+}

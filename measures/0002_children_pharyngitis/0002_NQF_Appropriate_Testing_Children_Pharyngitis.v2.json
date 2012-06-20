@@ -1,0 +1,71 @@
+{
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Laboratory Test Performed",
+        "title": "Group A streptococcus test 0 to 3 days before medication active, occurring <= 3 days after encounter"
+      },
+      {
+        "category": "Laboratory Test Performed",
+        "title": "Group A streptococcus test 0 to 3 days before medication order, occurring <= 3 days after encounter"
+      },
+      {
+        "category": "Laboratory Test Performed",
+        "title": "Group A streptococcus test 0 to 3 days before medication dispensed, occurring <= 3 days after encounter"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Encounter",
+        "title": "Ambulatory encounter, including pediatrics during the measurement period"
+      },
+      {
+        "category": "Diagnosis Active",
+        "title": "Pharyngitis, occuring during encounter"
+      },
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Medication Active",
+            "title": "Pharyngitis antibiotics 0 to 3 days after encounter"
+          },
+          {
+            "category": "Medication Order",
+            "title": "Pharyngitis antibiotics 0 to 3 days after encounter"
+          },
+          {
+            "category": "Medication Dispensed",
+            "title": "Pharyngitis antibiotics 0 to 3 days after encounter"
+          }
+        ]
+      },
+      {
+        "category": "Medication NOT Active",
+        "title": "Pharyngitis antibiotics <= 30 days after encounter"
+      },
+      {
+        "category": "Medication NOT Ordered",
+        "title": "Pharyngitis antibiotics <= 30 days after encounter"
+      },
+      {
+        "category": "Medication NOT Dispensed",
+        "title": "Pharyngitis antibiotics <= 30 days after encounter"
+      }
+    ]
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient Characteristic",
+        "title": "2 <= age <= 18"
+      }
+    ]
+  },
+  "exclusions": {}
+}

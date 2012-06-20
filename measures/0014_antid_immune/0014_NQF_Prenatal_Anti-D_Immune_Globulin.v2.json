@@ -1,0 +1,101 @@
+{
+  "numerator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Estimated date of conception 0 to 10 months, inclusive, before live birth delivery procedure"
+      },
+      {
+        "category": "Medication administered",
+        "title": "Anti-D immune globulin administered between 26 and 30 weeks (inclusive) after the estimated date of conception"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Diagnosis active",
+            "title": "D(Rh) negative, status unsensitized"
+          },
+          {
+            "conjunction": "and",
+            "items": [
+              {
+                "category": "Diagnosis active",
+                "title": "Primagravida"
+              },
+              {
+                "category": "Laboratory test result",
+                "title": "Mother Rh status negative"
+              }
+            ]
+          },
+          {
+            "conjunction": "and",
+            "items": [
+              {
+                "category": "Diagnosis active",
+                "title": "Multigravida"
+              },
+              {
+                "category": "Laboratory test result",
+                "title": "Mother Rh status negative"
+              },
+              {
+                "category": "Laboratory test result",
+                "title": "Baby Rh status negative"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "Encounter",
+        "title": "Prenatal visit"
+      }
+    ]
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Diagnosis active",
+        "title": "Live birth delivery"
+      },
+      {
+        "category": "Procedure",
+        "title": "Live birth delivery"
+      }
+    ]
+  },
+  "exclusions": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication not done",
+        "title": "Patient reason"
+      },
+      {
+        "category": "Medication not done",
+        "title": "Medical reason"
+      },
+      {
+        "category": "Medication not done",
+        "title": "System reason"
+      },
+      {
+        "category": "Patient characteristic",
+        "title": "Estimated date of conception <= 10 months"
+      },
+      {
+        "category": "Medication not done",
+        "title": "anti-D immune globulin declined within 30 weeks of estimated date of conception"
+      }
+    ]
+  }
+}

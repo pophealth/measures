@@ -1,0 +1,24 @@
+{
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication Administered",
+        "title": "Pneumococcal vaccination, before or simultaneously to measurement period end date"
+      },
+      {
+        "category": "Procedure performed",
+        "title": "Pneumococcal vaccination, before or simultaneously to measurement period end date"
+      }
+    ]
+  },
+  "denominator": {
+    "category": "Encounter",
+    "title": "Outpatient, <=1 year before or simultaneously to measurement period end date"
+  },
+  "population": {
+    "category": "Patient Characteristic",
+    "title": "Age >= 64"
+  },
+  "exclusions": {}
+}
