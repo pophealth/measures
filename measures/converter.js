@@ -29,11 +29,9 @@ toObj = function(obj){
   };
 };
 
-/*fs.readdir('.', function(e, files){
+fs.readdir('.', function(e, files){
   $.each(files, function(i, dir){
     if (dir.match(/^\d{4}/)){
-      runonce = true;*/
-      dir = '0001_asthma_assessment';
       fs.readdir(dir,  function(e, files){
         $.each(files, function(i, file){
           if (!file.match(/\.v2\.json$/) && file.match(/\.json$/)){
@@ -42,7 +40,6 @@ toObj = function(obj){
               function(file, e, data){
                 data = JSON.parse(data);
                 r = {};
-                debugger;
                 r.numerator = toObj(data.numerator)
                 r.denominator = toObj(data.denominator)
                 r.population = toObj(data.population)
@@ -52,7 +49,7 @@ toObj = function(obj){
             );
           }
         });
-      });/*
+      });
     }
   });
-});*/
+});
