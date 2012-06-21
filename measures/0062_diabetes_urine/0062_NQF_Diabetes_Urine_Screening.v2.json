@@ -1,36 +1,38 @@
 {
-  "numerator": {
-    "conjunction": "or",
-    "items": [
-      {
-        "category": "Diagnosis Active",
-        "title": "Nephropathy, during the measurement period"
-      },
-      {
-        "category": "Procedure Performed",
-        "title": "Nephropathy-related procedures, during the measurement period"
-      },
-      {
-        "category": "Laboratory Test Performed",
-        "title": "Urine microalbumin, during the measurement period"
-      },
-      {
-        "category": "Laboratory Test Performed",
-        "title": "Nephropathy screening, during the measurement period"
-      },
-      {
-        "category": "Medication Order",
-        "title": "ACE Inhibitors/ARBs, during the measurement period"
-      },
-      {
-        "category": "Medication Dispensed",
-        "title": "ACE Inhibitors/ARBs, during the measurement period"
-      },
-      {
-        "category": "Medication Active",
-        "title": "ACE Inhibitors/ARBs, during the measurement period"
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0062",
+  "properties": "NQF_Retooled_Measure_0062.xlsx.json",
+  "name": "Diabetes Urine Screening",
+  "description": "The percentage of patients 18-75 years of age with diabetes (type 1 or type 2) who had a nephropathy screening test or evidence of nephropathy.",
+  "category": "Diabetes",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "critical": true,
+      "type": "number",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
+    "category": "Patient Characteristic",
+    "title": "18 <= age <= 75"
   },
   "denominator": {
     "conjunction": "or",
@@ -63,9 +65,38 @@
       }
     ]
   },
-  "population": {
-    "category": "Patient Characteristic",
-    "title": "18 <= age <= 75"
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Diagnosis Active",
+        "title": "Nephropathy, during the measurement period"
+      },
+      {
+        "category": "Procedure Performed",
+        "title": "Nephropathy-related procedures, during the measurement period"
+      },
+      {
+        "category": "Laboratory Test Performed",
+        "title": "Urine microalbumin, during the measurement period"
+      },
+      {
+        "category": "Laboratory Test Performed",
+        "title": "Nephropathy screening, during the measurement period"
+      },
+      {
+        "category": "Medication Order",
+        "title": "ACE Inhibitors/ARBs, during the measurement period"
+      },
+      {
+        "category": "Medication Dispensed",
+        "title": "ACE Inhibitors/ARBs, during the measurement period"
+      },
+      {
+        "category": "Medication Active",
+        "title": "ACE Inhibitors/ARBs, during the measurement period"
+      }
+    ]
   },
   "exclusions": {
     "conjunction": "or",

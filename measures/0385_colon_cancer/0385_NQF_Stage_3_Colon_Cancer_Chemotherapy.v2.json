@@ -1,25 +1,34 @@
 {
-  "numerator": {
-    "conjunction": "or",
-    "items": [
-      {
-        "category": "Medication order",
-        "title": "Chemotherapy for colon cancer"
-      },
-      {
-        "category": "Medication administered",
-        "title": "Chemotherapy for colon cancer"
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0385",
+  "properties": "NQF_Retooled_Measure_0385.xlsx.json",
+  "name": "Oncology Colon Cancer: Chemotherapy for Stage III Colon Cancer Patients",
+  "description": "Percentage of patients aged 18 years and older with Stage IIIA through IIIC colon cancer who are referred for adjuvant chemotherapy, prescribed adjuvant chemotherapy, or have previously received adjuvant chemotherapy within the 12-month reporting period.",
+  "category": "Cancer",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
   },
-  "denominator": {
-    "conjunction": "and",
-    "items": [
-      {
-        "category": "Procedure result",
-        "title": "Colon cancer stage III"
-      }
-    ]
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "standard_category": "characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
   },
   "population": {
     "conjunction": "and",
@@ -44,6 +53,28 @@
       {
         "category": "Encounter",
         "title": ">= 2 counts of office visit"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Procedure result",
+        "title": "Colon cancer stage III"
+      }
+    ]
+  },
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication order",
+        "title": "Chemotherapy for colon cancer"
+      },
+      {
+        "category": "Medication administered",
+        "title": "Chemotherapy for colon cancer"
       }
     ]
   },

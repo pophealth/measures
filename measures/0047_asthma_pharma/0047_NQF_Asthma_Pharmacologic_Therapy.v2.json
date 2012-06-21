@@ -1,18 +1,35 @@
 {
-  "numerator": {
-    "conjunction": "or",
-    "items": [
-      {
-        "category": "Medication order",
-        "title": "Inhaled corticosteroid or alternative asthma medication ordered"
-      },
-      {
-        "category": "Medication active",
-        "title": "Inhaled corticosteroid or alternative asthma medication active"
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0047",
+  "properties": "NQF_Retooled_Measure_0047.xlsx.json",
+  "name": "Asthma Pharmacologic Therapy",
+  "description": "Percentage of patients aged 5 through 40 years with a diagnosis of mild, moderate, or severe persistent asthma who were prescribed either the preferred long-term control medication (inhaled corticosteroid) or an acceptable alternative treatment.",
+  "category": "Asthma",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
   },
-  "denominator": {},
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "standard_category": "characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
   "population": {
     "conjunction": "and",
     "items": [
@@ -36,6 +53,20 @@
       {
         "category": "Encounter",
         "title": ">= 2 counts of office or outpatient consult"
+      }
+    ]
+  },
+  "denominator": {},
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication order",
+        "title": "Inhaled corticosteroid or alternative asthma medication ordered"
+      },
+      {
+        "category": "Medication active",
+        "title": "Inhaled corticosteroid or alternative asthma medication active"
       }
     ]
   },

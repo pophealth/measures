@@ -1,23 +1,35 @@
 {
-  "numerator": {
-    "conjunction": "and",
-    "items": [
-      {
-        "conjunction": "or",
-        "items": [
-          {
-            "category": "Medication order",
-            "title": "Antiplatelet therapy"
-          },
-          {
-            "category": "Medication active",
-            "title": "Antiplatelet therapy"
-          }
-        ]
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0067",
+  "properties": "NQF_Retooled_Measure_0067.xlsx.json",
+  "name": "Coronary Artery Disease (CAD): Oral Antiplatelet Therapy Prescribed for Patients with CAD",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of CAD who were prescribed oral antiplatelet therapy.",
+  "category": "Heart conditions",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
   },
-  "denominator": {},
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
   "population": {
     "conjunction": "and",
     "items": [
@@ -52,6 +64,25 @@
           {
             "category": "Encounter",
             "title": ">= 1 count(s) of inpatient discharge encounter"
+          }
+        ]
+      }
+    ]
+  },
+  "denominator": {},
+  "numerator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Medication order",
+            "title": "Antiplatelet therapy"
+          },
+          {
+            "category": "Medication active",
+            "title": "Antiplatelet therapy"
           }
         ]
       }

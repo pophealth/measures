@@ -1,20 +1,35 @@
 {
-  "numerator": {
-    "conjunction": "or",
-    "items": [
-      {
-        "category": "Medication Administered",
-        "title": "Influenza vaccine"
-      },
-      {
-        "category": "Procedure Performed",
-        "title": "Influenza vaccination"
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0041",
+  "properties": "NQF_Retooled_Measure_0041.xlsx.json",
+  "name": "Preventive Care and Screening: Influenza Immunization for Patients >= 50 Years Old",
+  "description": "Percentage of patients aged 50 years and older who received an influenza immunization during the flu season (September through February).",
+  "category": "Core Alternate",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
   },
-  "denominator": {
-    "category": "Encounter",
-    "title": "Influenza between Sept and Feb inclusive"
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "critical": true,
+      "standard_category": "characteristic",
+      "type": "number",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
   },
   "population": {
     "conjunction": "and",
@@ -55,6 +70,23 @@
             "title": "Nursing discharge"
           }
         ]
+      }
+    ]
+  },
+  "denominator": {
+    "category": "Encounter",
+    "title": "Influenza between Sept and Feb inclusive"
+  },
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication Administered",
+        "title": "Influenza vaccine"
+      },
+      {
+        "category": "Procedure Performed",
+        "title": "Influenza vaccination"
       }
     ]
   },

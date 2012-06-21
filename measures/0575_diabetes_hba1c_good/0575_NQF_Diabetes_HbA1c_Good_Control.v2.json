@@ -1,7 +1,38 @@
 {
-  "numerator": {
-    "category": "Laboratory Test Result",
-    "title": "Most recent HbA1c < 8.0%, during the measurement period"
+  "endorser": "NQF",
+  "id": "0575",
+  "properties": "NQF_Retooled_Measure_0575.xlsx.json",
+  "name": "Diabetes HbA1c Control < 8%",
+  "description": "The percentage of patients 18-75 years of age with diabetes (type 1 or type 2) who had HbA1c < 8.0%.",
+  "category": "Diabetes",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "critical": true,
+      "type": "number",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
+    "category": "Patient Characteristic",
+    "title": "18 <= age <=75"
   },
   "denominator": {
     "conjunction": "or",
@@ -34,9 +65,9 @@
       }
     ]
   },
-  "population": {
-    "category": "Patient Characteristic",
-    "title": "18 <= age <=75"
+  "numerator": {
+    "category": "Laboratory Test Result",
+    "title": "Most recent HbA1c < 8.0%, during the measurement period"
   },
   "exclusions": {
     "conjunction": "or",

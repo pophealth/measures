@@ -1,33 +1,34 @@
 {
-  "numerator": {
-    "conjunction": "or",
-    "items": [
-      {
-        "category": "Medication order",
-        "title": "Tamoxifen or aromatase inhibitor therapy"
-      },
-      {
-        "category": "Medication active",
-        "title": "Tamoxifen or aromatase inhibitor therapy"
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0387",
+  "properties": "NQF_Retooled_Measure_0387.xlsx.json",
+  "name": "Oncology Breast Cancer: Hormonal Therapy for Stage IC-IIIC Estrogen Receptor/Progesterone Receptor (ER/PR) Positive Breast Cancer",
+  "description": "Percentage of female patients aged 18 years and older with Stage IC through IIIC, ER or PR positive breast cancer who were prescribed tamoxifen or aromatase inhibitor (AI) during the 12-month reporting period.",
+  "category": "Cancer",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
   },
-  "denominator": {
-    "conjunction": "and",
-    "items": [
-      {
-        "category": "Patient Characteristic",
-        "title": "Gender Female"
-      },
-      {
-        "category": "Procedure Result",
-        "title": "Breast Cancer Stage IC-IIIC"
-      },
-      {
-        "category": "Procedure result",
-        "title": "breast cancer ER or PR positive"
-      }
-    ]
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "standard_category": "characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
   },
   "population": {
     "conjunction": "and",
@@ -52,6 +53,36 @@
       {
         "category": "Encounter",
         "title": ">= 2 counts of office visit encounter"
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient Characteristic",
+        "title": "Gender Female"
+      },
+      {
+        "category": "Procedure Result",
+        "title": "Breast Cancer Stage IC-IIIC"
+      },
+      {
+        "category": "Procedure result",
+        "title": "breast cancer ER or PR positive"
+      }
+    ]
+  },
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication order",
+        "title": "Tamoxifen or aromatase inhibitor therapy"
+      },
+      {
+        "category": "Medication active",
+        "title": "Tamoxifen or aromatase inhibitor therapy"
       }
     ]
   },

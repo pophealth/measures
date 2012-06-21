@@ -1,14 +1,45 @@
 {
-  "numerator": {
+  "endorser": "NQF",
+  "id": "0014",
+  "properties": "NQF_Retooled_Measure_0014.xlsx.json",
+  "name": "Prenatal Care: Anti-D Immune Globulin",
+  "description": "Percentage of D (Rh) negative, unsensitized patients, regardless of age, who gave birth during a 12-month period who received anti-D immune globulin at 26-30 weeks gestation.",
+  "category": "Women's Health",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "standard_category": "characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
     "conjunction": "and",
     "items": [
       {
-        "category": "Patient characteristic",
-        "title": "Estimated date of conception 0 to 10 months, inclusive, before live birth delivery procedure"
+        "category": "Diagnosis active",
+        "title": "Live birth delivery"
       },
       {
-        "category": "Medication administered",
-        "title": "Anti-D immune globulin administered between 26 and 30 weeks (inclusive) after the estimated date of conception"
+        "category": "Procedure",
+        "title": "Live birth delivery"
       }
     ]
   },
@@ -60,16 +91,16 @@
       }
     ]
   },
-  "population": {
+  "numerator": {
     "conjunction": "and",
     "items": [
       {
-        "category": "Diagnosis active",
-        "title": "Live birth delivery"
+        "category": "Patient characteristic",
+        "title": "Estimated date of conception 0 to 10 months, inclusive, before live birth delivery procedure"
       },
       {
-        "category": "Procedure",
-        "title": "Live birth delivery"
+        "category": "Medication administered",
+        "title": "Anti-D immune globulin administered between 26 and 30 weeks (inclusive) after the estimated date of conception"
       }
     ]
   },

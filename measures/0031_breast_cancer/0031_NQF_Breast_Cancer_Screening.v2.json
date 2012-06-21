@@ -1,10 +1,41 @@
 {
-  "numerator": {
+  "endorser": "NQF",
+  "id": "0031",
+  "properties": "NQF_Retooled_Measure_0031.xlsx.json",
+  "name": "Breast Cancer Screening",
+  "description": "The percentage of women 40-69 years of age who had a mammogram to screen for breast cancer.",
+  "category": "Women's Health",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "standard_category": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
     "conjunction": "and",
     "items": [
       {
-        "category": "Diagnostic Study",
-        "title": "Breast cancer screen performed within 2 years of measurement period end"
+        "category": "Patient Characteristic",
+        "title": "41 <= age <= 68"
       }
     ]
   },
@@ -30,12 +61,12 @@
       }
     ]
   },
-  "population": {
+  "numerator": {
     "conjunction": "and",
     "items": [
       {
-        "category": "Patient Characteristic",
-        "title": "41 <= age <= 68"
+        "category": "Diagnostic Study",
+        "title": "Breast cancer screen performed within 2 years of measurement period end"
       }
     ]
   },

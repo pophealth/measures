@@ -29,22 +29,23 @@ toObj = function(obj){
   };
 };
 
+var minify = process.argv[2] == '--min'
+
 fs.readdir('.', function(e, files){
   $.each(files, function(i, dir){
     if (dir.match(/^\d{4}/)){
       fs.readdir(dir,  function(e, files){
         $.each(files, function(i, file){
-          if (!file.match(/\.v2\.json$/) && file.match(/\.json$/)){
+          if (!file.match(/\.v2\.json$/) && !file.match(/\.v2\.min\.json$/) && file.match(/\.json$/)){
             console.log('Processsing file: ' + file)
             fs.readFile(dir+'/'+file, 'utf8',
               function(file, e, data){
                 data = JSON.parse(data);
-                r = {};
-                r.numerator = toObj(data.numerator)
-                r.denominator = toObj(data.denominator)
-                r.population = toObj(data.population)
-                r.exclusions = toObj(data.exclusions)
-                fs.writeFile(dir+'/'+file.match(/(.+)\.json/)[1]+'.v2.json', JSON.stringify(r, null, 2), 'utf8');
+                data.numerator = toObj(data.numerator)
+                data.denominator = toObj(data.denominator)
+                data.population = toObj(data.population)
+                data.exclusions = toObj(data.exclusions)
+                fs.writeFile(dir+'/'+file.match(/(.+)\.json/)[1]+'.v2' + (minify?'.min':'') + '.json', JSON.stringify(data, null, minify ? null : 2), 'utf8');
               }.curry(file)
             );
           }

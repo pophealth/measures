@@ -1,25 +1,38 @@
 {
-  "numerator": {
-    "conjunction": "or",
-    "items": [
-      {
-        "category": "Procedure Performed",
-        "title": "Eye exam, during the measurement period"
-      },
-      {
-        "conjunction": "and",
-        "items": [
-          {
-            "category": "Procedure Performed",
-            "title": "Eye exam, during the year prior to the measurement period"
-          },
-          {
-            "category": "Diagnosis NOT Active",
-            "title": "Diabetic retinopathy during the year prior to the measurement period"
-          }
-        ]
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0055",
+  "properties": "NQF_Retooled_Measure_0055.xlsx.json",
+  "name": "Diabetes Eye Exam",
+  "description": "The percentage of patients aged 18-75 years with diabetes (type 1 or type 2) who had an eye exam within two years.",
+  "category": "Diabetes",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "critical": true,
+      "type": "number",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
+    "category": "Patient Characteristic",
+    "title": "18 <= age <= 75"
   },
   "denominator": {
     "conjunction": "or",
@@ -52,9 +65,27 @@
       }
     ]
   },
-  "population": {
-    "category": "Patient Characteristic",
-    "title": "18 <= age <= 75"
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Procedure Performed",
+        "title": "Eye exam, during the measurement period"
+      },
+      {
+        "conjunction": "and",
+        "items": [
+          {
+            "category": "Procedure Performed",
+            "title": "Eye exam, during the year prior to the measurement period"
+          },
+          {
+            "category": "Diagnosis NOT Active",
+            "title": "Diabetic retinopathy during the year prior to the measurement period"
+          }
+        ]
+      }
+    ]
   },
   "exclusions": {
     "conjunction": "or",

@@ -1,10 +1,41 @@
 {
-  "numerator": {
+  "endorser": "NQF",
+  "id": "0052",
+  "properties": "NQF_Retooled_Measure_0052.xlsx.json",
+  "name": "Low Back Pain: Use of Imaging Studies",
+  "description": "The percentage of patients with a primary diagnosis of low back pain who did not have an imaging study (plain X-ray, MRI, CT scan) within 28 days of diagnosis.",
+  "category": "Miscellaneous",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
     "conjunction": "and",
     "items": [
       {
-        "category": "Diagnostic study performed",
-        "title": "No spinal imaging study performed <= 28 days after first active low back pain diagnosis during measurement period"
+        "category": "Patient characteristic",
+        "title": "18 <= age <= 49"
       }
     ]
   },
@@ -46,12 +77,12 @@
       }
     ]
   },
-  "population": {
+  "numerator": {
     "conjunction": "and",
     "items": [
       {
-        "category": "Patient characteristic",
-        "title": "18 <= age <= 49"
+        "category": "Diagnostic study performed",
+        "title": "No spinal imaging study performed <= 28 days after first active low back pain diagnosis during measurement period"
       }
     ]
   },

@@ -1,39 +1,34 @@
 {
-  "numerator": {
-    "conjunction": "and",
-    "items": [
-      {
-        "conjunction": "or",
-        "items": [
-          {
-            "category": "Medication order",
-            "title": "ACE inhibitor or ARB"
-          },
-          {
-            "category": "Medication active",
-            "title": "ACE inhibitor or ARB"
-          }
-        ]
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0081",
+  "properties": "NQF_Retooled_Measure_0081.xlsx.json",
+  "name": "Heart Failure: Angiotensin-Converting Enzyme (ACE) Inhibitor or Angiotensin Receptor Blocker (ARB) Therapy for Left Ventricular Systolic Dysfunction (LVSD)",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of heart failure and LVSD (LVEF < 40%) who were prescribed ACE inhibitor or ARB therapy.",
+  "category": "Heart conditions",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
   },
-  "denominator": {
-    "conjunction": "and",
-    "items": [
-      {
-        "conjunction": "or",
-        "items": [
-          {
-            "category": "Diagnostic study result",
-            "title": "LVF assessment result value < 40%"
-          },
-          {
-            "category": "Diagnostic study result",
-            "title": "Ejection fraction result value < 40%"
-          }
-        ]
-      }
-    ]
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
   },
   "population": {
     "conjunction": "and",
@@ -60,6 +55,42 @@
           {
             "category": "Encounter",
             "title": ">= 1 count(s) of inpatient discharge"
+          }
+        ]
+      }
+    ]
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Diagnostic study result",
+            "title": "LVF assessment result value < 40%"
+          },
+          {
+            "category": "Diagnostic study result",
+            "title": "Ejection fraction result value < 40%"
+          }
+        ]
+      }
+    ]
+  },
+  "numerator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "conjunction": "or",
+        "items": [
+          {
+            "category": "Medication order",
+            "title": "ACE inhibitor or ARB"
+          },
+          {
+            "category": "Medication active",
+            "title": "ACE inhibitor or ARB"
           }
         ]
       }

@@ -1,17 +1,56 @@
 {
-  "numerator": {
+  "endorser": "NQF",
+  "id": "0083",
+  "properties": "NQF_Retooled_Measure_0083.xlsx.json",
+  "name": "Heart Failure (HF): Beta-Blocker Therapy for Left Ventricular Systolic Dysfunction (LVSD)",
+  "description": "Percentage of patients aged 18 years and older with a diagnosis of heart failure who also have LVSD (LVEF < 40%) and who were prescribed beta-blocker therapy.",
+  "category": "Heart conditions",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
     "conjunction": "and",
     "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Age >= 18 years"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "Heart failure"
+      },
       {
         "conjunction": "or",
         "items": [
           {
-            "category": "Medication active",
-            "title": "Beta-blocker therapy"
+            "category": "Encounter",
+            "title": ">= 2 counts of outpatient"
           },
           {
-            "category": "Medication order",
-            "title": "Beta-blocker therapy"
+            "category": "Encounter",
+            "title": ">= 2 counts of nursing facility"
           }
         ]
       }
@@ -35,27 +74,19 @@
       }
     ]
   },
-  "population": {
+  "numerator": {
     "conjunction": "and",
     "items": [
-      {
-        "category": "Patient characteristic",
-        "title": "Age >= 18 years"
-      },
-      {
-        "category": "Diagnosis active",
-        "title": "Heart failure"
-      },
       {
         "conjunction": "or",
         "items": [
           {
-            "category": "Encounter",
-            "title": ">= 2 counts of outpatient"
+            "category": "Medication active",
+            "title": "Beta-blocker therapy"
           },
           {
-            "category": "Encounter",
-            "title": ">= 2 counts of nursing facility"
+            "category": "Medication order",
+            "title": "Beta-blocker therapy"
           }
         ]
       }

@@ -1,20 +1,38 @@
 {
-  "numerator": {
-    "conjunction": "or",
-    "items": [
-      {
-        "category": "Medication dispensed",
-        "title": "Oral anti-platelet therapy dispensed, during the measurement period"
-      },
-      {
-        "category": "Medication order",
-        "title": "Oral anti-platelet therapy ordered, during the measurement period"
-      },
-      {
-        "category": "Medication active",
-        "title": "Oral anti-platelet therapy active, during the measurement period"
-      }
-    ]
+  "endorser": "NQF",
+  "id": "0068",
+  "properties": "NQF_Retooled_Measure_0068.xlsx.json",
+  "name": "Ischemic Vascular Disease (IVD): Use of Aspirin or another Antithrombotic",
+  "description": "The percentage of patients 18 years of age or older who were discharged alive for acute myocardial infarction (AMI), coronary artery bypass graft (CABG) or percutaneous transluminal coronary angioplasty (PTCA) from January 1-November 1 of the year prior to the measurement year, omr who had a diagnosis of ischemic vascular disease (IVD) during the measurement year and the year prior to the measurement year and who had documentation of use of aspirin or another antithrombotic during the measurement year.",
+  "category": "Heart conditions",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
+    "category": "Patient characteristic",
+    "title": "Age >= 17"
   },
   "denominator": {
     "conjunction": "or",
@@ -64,9 +82,22 @@
       }
     ]
   },
-  "population": {
-    "category": "Patient characteristic",
-    "title": "Age >= 17"
+  "numerator": {
+    "conjunction": "or",
+    "items": [
+      {
+        "category": "Medication dispensed",
+        "title": "Oral anti-platelet therapy dispensed, during the measurement period"
+      },
+      {
+        "category": "Medication order",
+        "title": "Oral anti-platelet therapy ordered, during the measurement period"
+      },
+      {
+        "category": "Medication active",
+        "title": "Oral anti-platelet therapy active, during the measurement period"
+      }
+    ]
   },
   "exclusions": {}
 }

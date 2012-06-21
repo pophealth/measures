@@ -1,10 +1,41 @@
 {
-  "numerator": {
+  "endorser": "NQF",
+  "id": "0389",
+  "properties": "NQF_Retooled_Measure_0389.xlsx.json",
+  "name": "Prostate Cancer: Avoidance of Overuse of Bone Scan for Staging Low Risk Prostate Cancer Patients",
+  "description": "Percentage of patients, regardless of age, with a diagnosis of prostate cancer at low risk of recurrence receiving interstitial prostate brachytherapy, OR external beam radiotherapy to the prostate, OR radical prostatectomy, OR cryotherapy who did not have a bone scan performed at any time since diagnosis of prostate cancer.",
+  "category": "Cancer",
+  "steward": "AMA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
     "conjunction": "and",
     "items": [
       {
-        "category": "Diagnostic study",
-        "title": "Bone scan not performed"
+        "category": "Diagnosis active",
+        "title": "Prostate cancer"
       }
     ]
   },
@@ -38,12 +69,12 @@
       }
     ]
   },
-  "population": {
+  "numerator": {
     "conjunction": "and",
     "items": [
       {
-        "category": "Diagnosis active",
-        "title": "Prostate cancer"
+        "category": "Diagnostic study",
+        "title": "Bone scan not performed"
       }
     ]
   },
