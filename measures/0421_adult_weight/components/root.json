@@ -24,7 +24,9 @@
         {
           "set": "HL7",
           "version": "3.0",
-          "values": ["00110"]
+          "values": [
+            "00110"
+          ]
         }
       ]
     }
@@ -34,7 +36,8 @@
     "title": "Within a year of the effective date"
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Physical Exam Not Done",
         "title": "Patient, medical or system reason"

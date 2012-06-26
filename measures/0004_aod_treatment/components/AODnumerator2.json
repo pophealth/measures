@@ -1,9 +1,9 @@
 {
-  "or": [
+  "conjunction": "or",
+  "items": [
     {
       "category": "Encounter",
-      "title": "Acute or non-acute inpatient encounter or BH encounter within 30 days of FIRST_TREATMENT" 
+      "title": "Acute or non-acute inpatient encounter or BH encounter within 30 days of FIRST_TREATMENT"
     }
-  ] 
-} 
-
+  ]
+}

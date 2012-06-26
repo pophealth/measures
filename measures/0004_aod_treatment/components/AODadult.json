@@ -1,24 +1,26 @@
 {
-  "and": [
+  "conjunction": "and",
+  "items": [
     {
       "category": "Patient characteristic",
-      "title": "Age 17 years of age or older before the measurement period" 
+      "title": "Age 17 years of age or older before the measurement period"
     },
     {
-      "or": [
+      "conjunction": "or",
+      "items": [
         {
           "category": "Diagnosis active",
-          "title": "First diagnosis of alcohol or drug dependence during an ED, acute or non-acute inpatient, or BH encounter from one year to 45 days before the end of the measurement period = FIRST" 
+          "title": "First diagnosis of alcohol or drug dependence during an ED, acute or non-acute inpatient, or BH encounter from one year to 45 days before the end of the measurement period = FIRST"
         },
         {
           "category": "Procedure performed",
-          "title": "First Alcohol, drug rehab and detox interventions during an acute or non-acute inpatient encounter from one year to 45 days before the end of the measurement period = FIRST" 
+          "title": "First Alcohol, drug rehab and detox interventions during an acute or non-acute inpatient encounter from one year to 45 days before the end of the measurement period = FIRST"
         },
         {
           "category": "Procedure Performed",
-          "title": "First detoxification intervention from one year to 45 days before the end of the measurement period = FIRST" 
-        } 
-      ] 
-    } 
-  ] 
+          "title": "First detoxification intervention from one year to 45 days before the end of the measurement period = FIRST"
+        }
+      ]
+    }
+  ]
 }

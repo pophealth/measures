@@ -1,88 +1,87 @@
 {
-    "endorser": "NQF",
-    "id": "0105",
-    "properties": "NQF_Retooled_Measure_0105.xlsx.json",
-    "name": "Anti‐depressant medication management",
-    "description": "The percentage of patients 18 years of age and older who were diagnosed with a new episode of major depression, treated with antidepressant medication, and who remained on an antidepressant medication treatment.",
-    "category": "Miscellaneous",
-    "steward": "NCQA",
-    "parameters": {
-        "effective_date": {
-            "description": "Effective end date for measure",
-            "type": "number",
-            "format": "utc-sec" 
-        } 
-    },
-    "patient": {
-        "birthdate": {
-            "description": "Date of birth",
-            "type": "number",
-            "category_type": "patient_characteristic",
-            "format": "utc-sec",
-            "codes": [
-                {
-                    "set": "HL7",
-                    "version": "3.0",
-                    "values": [
-                        "00110" 
-                    ] 
-                } 
-            ] 
-        } 
-    },
-    "population": {
-        "and": [
-            {
-                "category": "Patient characteristic",
-                "title": "Age 18 years of age or older as of April 30 of the measurement period" 
-            },
-            {
-                "category": "Diagnosis active",
-                "title": "New diagnosis of Major Depression during an encounter from May 1st in the previous year until April 30 of the measurement period" 
-            },
-            {
-                "category": "Medication dispensed",
-                "title": "Antidepressant medication dispensed within 30 days prior to first diagnosis of major depression" 
-            },
-            {
-                "category": "Medication dispensed",
-                "title": "Antidepressant medication dispensed within 14 days following first diagnosis of major depression" 
-            },
-            {
-                "category": "Medication ordered",
-                "title": "Antidepressant medication ordered within 30 days prior to first diagnosis of major depression" 
-            },
-            {
-                "category": "Medication ordered",
-                "title": "Antidepressant medication ordered within 14 days following first diagnosis of major depression" 
-            },
-            {
-                "category": "Medication active",
-                "title": "Antidepressant medication active within 30 days prior to first diagnosis of major depression" 
-            },
-            {
-                "category": "Medication active",
-                "title": "Antidepressant medication active within 14 days following first diagnosis of major depression" 
-            } 
-        ] 
-    },
-    "denominator": {
-        "not": [
-            {
-                "or": [
-                    {
-                        "category": "Diagnosis Active",
-                        "title": "Diagnosis of Major Depression less than 120 days prior to first diagnosis of major depression in population criteria" 
-                    },
-                    {
-                        "category": "Diagnosis Active",
-                        "title": "Diagnosis of Depression less than 120 days prior to first diagnosis of major depression in population criteria" 
-                    } 
-                ] 
-            } 
-        ] 
-    },
-    "exclusions": {
-        
+  "endorser": "NQF",
+  "id": "0105",
+  "properties": "NQF_Retooled_Measure_0105.xlsx.json",
+  "name": "Anti‐depressant medication management",
+  "description": "The percentage of patients 18 years of age and older who were diagnosed with a new episode of major depression, treated with antidepressant medication, and who remained on an antidepressant medication treatment.",
+  "category": "Miscellaneous",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
     }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "category_type": "patient_characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
+    }
+  },
+  "population": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Patient characteristic",
+        "title": "Age 18 years of age or older as of April 30 of the measurement period"
+      },
+      {
+        "category": "Diagnosis active",
+        "title": "New diagnosis of Major Depression during an encounter from May 1st in the previous year until April 30 of the measurement period"
+      },
+      {
+        "category": "Medication dispensed",
+        "title": "Antidepressant medication dispensed within 30 days prior to first diagnosis of major depression"
+      },
+      {
+        "category": "Medication dispensed",
+        "title": "Antidepressant medication dispensed within 14 days following first diagnosis of major depression"
+      },
+      {
+        "category": "Medication ordered",
+        "title": "Antidepressant medication ordered within 30 days prior to first diagnosis of major depression"
+      },
+      {
+        "category": "Medication ordered",
+        "title": "Antidepressant medication ordered within 14 days following first diagnosis of major depression"
+      },
+      {
+        "category": "Medication active",
+        "title": "Antidepressant medication active within 30 days prior to first diagnosis of major depression"
+      },
+      {
+        "category": "Medication active",
+        "title": "Antidepressant medication active within 14 days following first diagnosis of major depression"
+      }
+    ]
+  },
+  "denominator": {
+    "not": [
+      {
+        "or": [
+          {
+            "category": "Diagnosis Active",
+            "title": "Diagnosis of Major Depression less than 120 days prior to first diagnosis of major depression in population criteria"
+          },
+          {
+            "category": "Diagnosis Active",
+            "title": "Diagnosis of Depression less than 120 days prior to first diagnosis of major depression in population criteria"
+          }
+        ]
+      }
+    ]
+  },
+  "exclusions": {}
 }

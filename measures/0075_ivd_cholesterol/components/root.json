@@ -23,13 +23,16 @@
         {
           "set": "HL7",
           "version": "3.0",
-          "values": ["00110"]
+          "values": [
+            "00110"
+          ]
         }
       ]
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
@@ -37,13 +40,15 @@
     ]
   },
   "denominator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Procedure",
         "title": "PTCA performed 14 to 24 months before the measurement end date"
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
             "title": "Acute inpatient encounter 14 to 24 months before the measurement end date"
@@ -55,7 +60,8 @@
         ]
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
             "title": "Acute inpatient encounter 14 to 24 months before the measurement end date"
@@ -67,7 +73,8 @@
         ]
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
             "title": "Acute inpatient and outpatient encounter <=2 years, inclusive, before the measurement end date"

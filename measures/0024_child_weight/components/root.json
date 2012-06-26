@@ -1,50 +1,51 @@
 {
-   "endorser": "NQF",
-   "id": "0024",
-   "properties": "NQF_Retooled_Measure_0024.xlsx.json",
-   "name": "Weight Assessment and Counseling for Children and Adolescents",
-   "description": "The percentage of patients 2‐17 years of age who had an outpatient visit with a PCP or OB/GYN and who had evidence of BMI percentile documentation, counseling for nutrition and counseling for physical activity during the measurement year.",
-   "category": "Core Alternate",
-   "steward": "NCQA",
-   "parameters": {
-      "effective_date": {
-         "description": "Effective end date for measure",
-         "type": "number",
-         "format": "utc-sec"
-      }
-   },
-   "patient": {
-      "birthdate": {
-         "description": "Date of birth",
-         "type": "number",
-         "standard_category": "characteristic",
-         "format": "utc-sec",
-         "codes": [
-            {
-               "set": "HL7",
-               "version": "3.0",
-               "values": [
-                  "00110"
-               ]
-            }
-         ]
-      }
-   },
-   "denominator": {
-      "and": [
-         {
-            "category": "Encounter",
-            "title": "Outpatient with PCP or ObGyn, during the measurement period"
-         },
-         {
-            "category": "NOT Encounter",
-            "title": "Pregnancy, during the measurement period"
-         },
-         {
-            "category": "Diagnosis NOT Active",
-            "title": "Pregnancy, during the measurement period"
-         }
+  "endorser": "NQF",
+  "id": "0024",
+  "properties": "NQF_Retooled_Measure_0024.xlsx.json",
+  "name": "Weight Assessment and Counseling for Children and Adolescents",
+  "description": "The percentage of patients 2‐17 years of age who had an outpatient visit with a PCP or OB/GYN and who had evidence of BMI percentile documentation, counseling for nutrition and counseling for physical activity during the measurement year.",
+  "category": "Core Alternate",
+  "steward": "NCQA",
+  "parameters": {
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
+  },
+  "patient": {
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "standard_category": "characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
       ]
-   },
-   "exclusions": {}
+    }
+  },
+  "denominator": {
+    "conjunction": "and",
+    "items": [
+      {
+        "category": "Encounter",
+        "title": "Outpatient with PCP or ObGyn, during the measurement period"
+      },
+      {
+        "category": "NOT Encounter",
+        "title": "Pregnancy, during the measurement period"
+      },
+      {
+        "category": "Diagnosis NOT Active",
+        "title": "Pregnancy, during the measurement period"
+      }
+    ]
+  },
+  "exclusions": {}
 }

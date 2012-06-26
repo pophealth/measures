@@ -48,11 +48,16 @@ var verbose = $.inArray('-v', process.argv) > -1;
             fs.readFile(dir+'/'+file, 'utf8',
               function(file, e, data){
                 data = JSON.parse(data);
-                data.numerator = data.numerator ? toObj(data.numerator) : undefined;
-                data.denominator = data.denominator ? toObj(data.denominator) : undefined;
-                data.population = data.population ? toObj(data.population) : undefined;
-                data.exclusions = data.exclusions ? toObj(data.exclusions) : undefined;
-                fs.writeFile(dir+'/'+file.match(/(.+)\.json/)[1]+'.v2' + (minify?'.min':'') + '.json', JSON.stringify(data, null, minify ? null : 2), 'utf8');
+                if (data.numerator || data.denominator || data.population || data.exclusions){
+                  data.numerator = data.numerator ? toObj(data.numerator) : undefined;
+                  data.denominator = data.denominator ? toObj(data.denominator) : undefined;
+                  data.population = data.population ? toObj(data.population) : undefined;
+                  data.exclusions = data.exclusions ? toObj(data.exclusions) : undefined;
+                } else {
+                  data = data ? toObj(data) : data;
+                }
+                //fs.writeFile(dir+'/'+file.match(/(.+)\.json/)[1]+'.v2' + (minify?'.min':'') + '.json', JSON.stringify(data, null, minify ? null : 2), 'utf8');
+                fs.writeFile(dir+'/'+file.match(/(.+)\.json/)[1]+'.json', JSON.stringify(data, null, minify ? null : 2), 'utf8');
               }.curry(file)
             );
           }
