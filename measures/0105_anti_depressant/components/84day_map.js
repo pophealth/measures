@@ -38,15 +38,15 @@ function() {
                                                                   all_encounters,
                                                                   earliest_encounter,
                                                                   latest_encounter);
-    if (depression_during_encounter.length <= 1 && depression_principal_during_encounter == 0) {
+    if (depression_during_encounter.length <= 1 && depression_principal_during_encounter.length == 0) {
       return(false);
     }
 
     first_diagnosis = _.min(depression_during_encounter);
     var meds_dispensed_before_first_diagnosis30 = inRange(measure.antidepressant_medications_medication_dispensed,first_diagnosis - (30 * day), first_diagnosis);
     var meds_dispensed_after_first_diagnosis14 = inRange(measure.antidepressant_medications_medication_dispensed, first_diagnosis, first_diagnosis + (14 * day));
-    var meds_ordered_before_first_diagnosis30 = inRange(measure.antidepressant_medications_medication_ordered,first_diagnosis - (30 * day), first_diagnosis);
-    var meds_ordered_after_first_diagnosis14 = inRange(measure.antidepressant_medications_medication_ordered, first_diagnosis, first_diagnosis + (14 * day));
+    var meds_ordered_before_first_diagnosis30 = inRange(measure.antidepressant_medications_medication_order,first_diagnosis - (30 * day), first_diagnosis);
+    var meds_ordered_after_first_diagnosis14 = inRange(measure.antidepressant_medications_medication_order, first_diagnosis, first_diagnosis + (14 * day));
     var meds_active_before_first_diagnosis30 = inRange(measure.antidepressant_medications_medication_active,first_diagnosis - (30 * day), first_diagnosis);
     var meds_active_after_first_diagnosis14 = inRange(measure.antidepressant_medications_medication_active, first_diagnosis, first_diagnosis + (14 * day));
 
