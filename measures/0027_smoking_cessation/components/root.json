@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 17 years"
@@ -39,7 +40,8 @@
     ]
   },
   "denominator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Encounter",
         "title": "Outpatient encounter 0 to 2 years, inclusive, before measurement end date"

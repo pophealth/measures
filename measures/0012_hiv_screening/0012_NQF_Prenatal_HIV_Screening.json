@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Diagnosis Active",
         "title": "Live birth delivery"
@@ -43,7 +44,8 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Encounter",
         "title": "Prenatal visit after estimated date of conception"
@@ -51,13 +53,15 @@
     ]
   },
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Estimated date of conception 0 to 10 months, inclusive, before live birth delivery procedure"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Laboratory Test Performed",
             "title": "HIV Screening 0 to 30 days, inclusive, after first prenatal visit"
@@ -71,7 +75,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Diagnosis active",
         "title": "HIV"

@@ -31,13 +31,15 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "Active breast cancer"
@@ -55,14 +57,15 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient Characteristic",
-        "title": "Gender Female" 
+        "title": "Gender Female"
       },
       {
         "category": "Procedure Result",
-        "title": "Breast Cancer Stage IC-IIIC" 
+        "title": "Breast Cancer Stage IC-IIIC"
       },
       {
         "category": "Procedure result",
@@ -71,7 +74,8 @@
     ]
   },
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication order",
         "title": "Tamoxifen or aromatase inhibitor therapy"
@@ -83,7 +87,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication intolerance",
         "title": "Tamoxifen or aromatase inhibitor therapy"
@@ -104,11 +109,11 @@
         "category": "Procedure Performed",
         "title": "Bilateral oophorectomy"
       },
-     {
+      {
         "category": "Procedure Performed",
         "title": "Radiation therapy"
       },
-     {
+      {
         "category": "Procedure Performed",
         "title": "Chemotherapy"
       },

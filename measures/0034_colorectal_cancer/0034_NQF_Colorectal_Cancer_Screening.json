@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "50 <= age <= 75"
@@ -39,7 +40,8 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Encounter",
         "title": "Outpatient encounter 0 to 2 years, inclusive, before or simultaneously to the measurement end date"
@@ -51,7 +53,8 @@
     ]
   },
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Procedure performed",
         "title": "Colonoscopy performed 0 to 10 years, inclusive, before or simultaneously to the measurement end date"
@@ -67,7 +70,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Diagnosis active",
         "title": "Colorectal cancer, before or simultaneously to the measurement end date"

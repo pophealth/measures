@@ -10,8 +10,8 @@
     "effective_date": {
       "description": "Effective end date for measure",
       "type": "number",
-      "format": "utc-sec" 
-    } 
+      "format": "utc-sec"
+    }
   },
   "patient": {
     "birthdate": {
@@ -26,32 +26,31 @@
           "version": "3.0",
           "values": [
             "00110"
-          ] 
-        } 
-      ] 
-    } 
+          ]
+        }
+      ]
+    }
   },
   "population": {
     "category": "Patient Characteristic",
-    "title": "Age >= 64" 
+    "title": "Age >= 64"
   },
   "denominator": {
     "category": "Encounter",
-    "title": "Outpatient, <=1 year before or simultaneously to measurement period end date" 
+    "title": "Outpatient, <=1 year before or simultaneously to measurement period end date"
   },
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication Administered",
-        "title": "Pneumococcal vaccination, before or simultaneously to measurement period end date" 
+        "title": "Pneumococcal vaccination, before or simultaneously to measurement period end date"
       },
       {
         "category": "Procedure performed",
-        "title": "Pneumococcal vaccination, before or simultaneously to measurement period end date" 
+        "title": "Pneumococcal vaccination, before or simultaneously to measurement period end date"
       }
     ]
   },
-  "exclusions": {
-    
-  }
+  "exclusions": {}
 }

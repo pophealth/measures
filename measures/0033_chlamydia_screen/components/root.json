@@ -19,21 +19,27 @@
       "type": "number",
       "category_type": "patient_characteristic",
       "format": "utc-sec",
-      "codes": [{
-        "set": "HL7",
-        "version": "3.0",
-        "values": ["00110"]
-      }]
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
+          ]
+        }
+      ]
     }
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Encounter",
         "title": "Outpatient, before or simultaneously to the measurement end date"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Procedure Performed",
             "title": "Procedure Indicative of Sexually Active Women, during the measurement period"
@@ -71,7 +77,8 @@
     ]
   },
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Laboratory Test Performed",
         "title": "Chlamydia screening, during the measurement period"
@@ -83,13 +90,15 @@
     ]
   },
   "exclusions": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Laboratory Test Performed or Result",
         "title": "Pregnancy test, during the measurement period"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Medication Active, Order or Dispensed",
             "title": "Retinoid within 7 days of pregnancy test"

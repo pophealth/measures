@@ -31,13 +31,15 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "Coronary artery disease without MI"
@@ -49,7 +51,8 @@
         ]
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Encounter",
             "title": ">= 2 counts of outpatient"
@@ -67,7 +70,8 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Diagnosis resolved",
         "title": "Myocardial infarction"
@@ -75,7 +79,8 @@
     ]
   },
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication order",
         "title": "Beta-blocker therapy ordered"
@@ -87,7 +92,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Diagnosis active",
         "title": "Arrhythmia"
@@ -109,7 +115,8 @@
         "title": "Atresia and stenosis of the aorta"
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "Active atrioventricular block"

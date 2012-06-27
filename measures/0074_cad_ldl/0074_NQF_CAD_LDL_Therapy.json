@@ -31,13 +31,15 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "Coronary artery disease includes MI"
@@ -49,7 +51,8 @@
         ]
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Encounter",
             "title": ">= 2 counts of outpatient"
@@ -62,12 +65,13 @@
       }
     ]
   },
-  "denominator": {
-  },
+  "denominator": {},
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Medication order",
             "title": "Lipid lowering therapy"
@@ -79,10 +83,10 @@
         ]
       }
     ]
-    
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Laboratory test result",
         "title": "Last LDL laboratory test value < 130mg/dL"

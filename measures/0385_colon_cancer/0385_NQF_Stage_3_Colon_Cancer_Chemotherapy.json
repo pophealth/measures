@@ -31,13 +31,15 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "Colon cancer"
@@ -55,7 +57,8 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Procedure result",
         "title": "Colon cancer stage III"
@@ -63,7 +66,8 @@
     ]
   },
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication order",
         "title": "Chemotherapy for colon cancer"
@@ -75,7 +79,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Diagnosis active",
         "title": "Metastatic sites common to colon cancer"

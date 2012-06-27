@@ -10,8 +10,8 @@
     "effective_date": {
       "description": "Effective end date for measure",
       "type": "number",
-      "format": "utc-sec" 
-    } 
+      "format": "utc-sec"
+    }
   },
   "patient": {
     "birthdate": {
@@ -24,49 +24,51 @@
           "set": "HL7",
           "version": "3.0",
           "values": [
-            "00110" 
-          ] 
-        } 
-      ] 
-    } 
+            "00110"
+          ]
+        }
+      ]
+    }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient Characteristic",
-        "title": "41 <= age <= 68" 
-      } 
-    ] 
+        "title": "41 <= age <= 68"
+      }
+    ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Encounter",
-        "title": "Outpatient within 2 years of measurement period end" 
+        "title": "Outpatient within 2 years of measurement period end"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Procedure NOT performed",
-            "title": "Bilateral mastectomy, before measurement period end" 
+            "title": "Bilateral mastectomy, before measurement period end"
           },
           {
             "category": "Procedure performed",
-            "title": "No more than 1 unilateral mastectomy with no bilateral mastectomy modifier, before measurement period end" 
-          } 
-        ] 
-      } 
-    ] 
+            "title": "No more than 1 unilateral mastectomy with no bilateral mastectomy modifier, before measurement period end"
+          }
+        ]
+      }
+    ]
   },
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Diagnostic Study",
-        "title": "Breast cancer screen performed within 2 years of measurement period end" 
-      } 
-    ] 
+        "title": "Breast cancer screen performed within 2 years of measurement period end"
+      }
+    ]
   },
-  "exclusions": {
-    
-  } 
+  "exclusions": {}
 }

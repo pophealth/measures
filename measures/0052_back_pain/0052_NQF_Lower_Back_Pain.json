@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "18 <= age <= 49"
@@ -39,7 +40,8 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Encounter",
         "title": "Ambulatory encounter, including orthopedics and chiropractics, during the measurement period"
@@ -49,7 +51,8 @@
         "title": "Active low back pain, first occurrence during the measurement period"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "No active low back pain diagnosis <= 180 days before first active low back pain diagnosis during measurement period"
@@ -71,17 +74,17 @@
             "title": "No active neurologic impairment 0 to 2 years, inclusive, before measurement end date"
           }
         ]
-      } 
+      }
     ]
   },
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Diagnostic study performed",
         "title": "No spinal imaging study performed <= 28 days after first active low back pain diagnosis during measurement period"
       }
     ]
   },
-  "exclusions": {
-  }
+  "exclusions": {}
 }

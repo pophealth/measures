@@ -1,13 +1,13 @@
 {
-  "or": [
+  "conjunction": "or",
+  "items": [
     {
       "category": "Procedure Performed",
-      "title": "Alcohol, drug, rehab an ddetox interventions performed during an acute or non-acute inpatient encounter from one year to 45 days before the end of the measurement period = FIRST_TREATMENT" 
+      "title": "Alcohol, drug, rehab an ddetox interventions performed during an acute or non-acute inpatient encounter from one year to 45 days before the end of the measurement period = FIRST_TREATMENT"
     },
     {
       "category": "Encounter",
-      "title": "Acute or non-acute inpatient encounter or BH encounter within 14 days of FIRST = FIRST_TREATMENT" 
+      "title": "Acute or non-acute inpatient encounter or BH encounter within 14 days of FIRST = FIRST_TREATMENT"
     }
-  ] 
-} 
-
+  ]
+}

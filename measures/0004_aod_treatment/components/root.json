@@ -10,8 +10,8 @@
     "effective_date": {
       "description": "Effective end date for measure",
       "type": "number",
-      "format": "utc-sec" 
-    } 
+      "format": "utc-sec"
+    }
   },
   "patient": {
     "birthdate": {
@@ -24,18 +24,15 @@
           "set": "HL7",
           "version": "3.0",
           "values": [
-            "00110" 
-          ] 
-        } 
-
-      ] 
-    } 
+            "00110"
+          ]
+        }
+      ]
+    }
   },
   "denominator": {
     "category": "Diagnosis Active",
-    "title": "No diagnosis of Alcohol or Drug Dependence less than 60 days prior to FIRST" 
+    "title": "No diagnosis of Alcohol or Drug Dependence less than 60 days prior to FIRST"
   },
-  "exclusions": {
-    
-  }
+  "exclusions": {}
 }

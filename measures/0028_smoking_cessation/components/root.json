@@ -1,6 +1,9 @@
 {
   "id": "0028",
-  "properties": ["NQF_Retooled_Measure_0028a.xlsx.json","NQF_Retooled_Measure_0028b.xlsx.json"],
+  "properties": [
+    "NQF_Retooled_Measure_0028a.xlsx.json",
+    "NQF_Retooled_Measure_0028b.xlsx.json"
+  ],
   "endorser": "NQF",
   "name": "Preventive Care and Screening: Tobacco",
   "description": "Percentage of patients aged 18 years or older who have been seen for at least 2 office visits, who were queried about tobacco use one or more times within 24 months. If identified as tobacco users, patient received cessation intervention.",
@@ -24,22 +27,23 @@
         {
           "set": "HL7",
           "version": "3.0",
-          "values": ["00110"]
+          "values": [
+            "00110"
+          ]
         }
       ]
     }
   },
-  "population": 
-  {
-    "and": 
-    [
+  "population": {
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient Characteristic",
         "title": "Age >= 18"
       },
       {
-        "or": 
-        [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Encounter",
             "title": ">= 2 counts of health and behavior assessment OR occupational therapy OR office visit OR psychiatric and psychologic"

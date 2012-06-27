@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Diagnosis active",
         "title": "Live birth delivery"
@@ -43,15 +44,18 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "D(Rh) negative, status unsensitized"
           },
           {
-            "and": [
+            "conjunction": "and",
+            "items": [
               {
                 "category": "Diagnosis active",
                 "title": "Primagravida"
@@ -63,7 +67,8 @@
             ]
           },
           {
-            "and": [
+            "conjunction": "and",
+            "items": [
               {
                 "category": "Diagnosis active",
                 "title": "Multigravida"
@@ -87,7 +92,8 @@
     ]
   },
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Estimated date of conception 0 to 10 months, inclusive, before live birth delivery procedure"
@@ -99,7 +105,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication not done",
         "title": "Patient reason"

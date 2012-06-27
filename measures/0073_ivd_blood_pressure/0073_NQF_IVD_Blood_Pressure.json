@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
@@ -39,13 +40,15 @@
     ]
   },
   "denominator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Procedure",
         "title": "PTCA performed 14 to 24 months before the measurement end date"
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
             "title": "Acute inpatient encounter 14 to 24 months before the measurement end date"
@@ -57,7 +60,8 @@
         ]
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
             "title": "Acute inpatient encounter 14 to 24 months before the measurement end date"
@@ -69,7 +73,8 @@
         ]
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
             "title": "Acute inpatient and outpatient encounter <=2 years, inclusive, before the measurement end date"
@@ -83,7 +88,8 @@
     ]
   },
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Physical exam finding",
         "title": "Systolic blood pressure minimum < 140 mmHg during most recent encounter, acute inpatient and outpatient"

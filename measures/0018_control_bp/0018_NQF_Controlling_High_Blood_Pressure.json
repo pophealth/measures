@@ -7,36 +7,37 @@
   "category": "Miscellaneous",
   "steward": "NCQA",
   "parameters": {
-      "effective_date": {
-          "description": "Effective end date for measure",
-          "type": "number",
-          "format": "utc-sec"
-      }
+    "effective_date": {
+      "description": "Effective end date for measure",
+      "type": "number",
+      "format": "utc-sec"
+    }
   },
   "patient": {
-      "birthdate": {
-          "description": "Date of birth",
-          "type": "number",
-          "critical": true,
-          "standard_category": "characteristic",
-          "format": "utc-sec",
-          "codes": [
-              {
-                  "set": "HL7",
-                  "version": "3.0",
-                  "values": [
-                      "00110"
-                  ]
-              }
+    "birthdate": {
+      "description": "Date of birth",
+      "type": "number",
+      "critical": true,
+      "standard_category": "characteristic",
+      "format": "utc-sec",
+      "codes": [
+        {
+          "set": "HL7",
+          "version": "3.0",
+          "values": [
+            "00110"
           ]
-      }
+        }
+      ]
+    }
   },
   "population": {
     "category": "Patient Characteristic",
-    "title": "18 <= age <= 85"        
+    "title": "18 <= age <= 85"
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Diagnosis active",
         "title": "Hypertension <= 6 months after measurement start date"
@@ -60,7 +61,8 @@
     ]
   },
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Physical exam finding",
         "title": "Minimum diastolic blood pressure < 90 mmHg during most recent encounter"
@@ -69,8 +71,7 @@
         "category": "Physical exam finding",
         "title": "Minimum systolic blood pressure < 140 mmHg during most recent encounter"
       }
-    ]        
+    ]
   },
-  "exclusions": {
-  }
+  "exclusions": {}
 }

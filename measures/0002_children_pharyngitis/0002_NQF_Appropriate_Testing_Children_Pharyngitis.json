@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient Characteristic",
         "title": "2 <= age <= 18"
@@ -39,7 +40,8 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Encounter",
         "title": "Ambulatory encounter, including pediatrics during the measurement period"
@@ -49,7 +51,8 @@
         "title": "Pharyngitis, occuring during encounter"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Medication Active",
             "title": "Pharyngitis antibiotics 0 to 3 days after encounter"
@@ -79,7 +82,8 @@
     ]
   },
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Laboratory Test Performed",
         "title": "Group A streptococcus test 0 to 3 days before medication active, occurring <= 3 days after encounter"

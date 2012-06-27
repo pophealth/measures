@@ -10,8 +10,8 @@
     "effective_date": {
       "description": "Effective end date for measure",
       "type": "number",
-      "format": "utc-sec" 
-    } 
+      "format": "utc-sec"
+    }
   },
   "patient": {
     "birthdate": {
@@ -24,194 +24,203 @@
           "set": "HL7",
           "version": "3.0",
           "values": [
-            "00110" 
-          ] 
-        } 
-      ] 
-    } 
+            "00110"
+          ]
+        }
+      ]
+    }
   },
   "denominator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
-            "title": "ED Encounter, <=1 year before or simultaneously to the measurement end date" 
+            "title": "ED Encounter, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Diagnosis Active",
-            "title": "Asthma, <=1 year before or simultaneously to the measurement end date" 
-          } 
-        ] 
+            "title": "Asthma, <=1 year before or simultaneously to the measurement end date"
+          }
+        ]
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
-            "title": "Acute Inpt Encounter, <=1 year before or simultaneously to the measurement end date" 
+            "title": "Acute Inpt Encounter, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Diagnosis Active",
-            "title": "Asthma, <=1 year before or simultaneously to the measurement end date" 
-          } 
-        ] 
+            "title": "Asthma, <=1 year before or simultaneously to the measurement end date"
+          }
+        ]
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Encounter",
-            "title": "4 or more Outpatient, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Outpatient, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Diagnosis Active",
-            "title": "Asthma, <=1 year before or simultaneously to the measurement end date" 
+            "title": "Asthma, <=1 year before or simultaneously to the measurement end date"
           },
           {
-            "or": [
+            "conjunction": "or",
+            "items": [
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Antiasthmatic combinations, <=1 year before or simultaneously to the measurement end date" 
+                "title": "2 or more Antiasthmatic combinations, <=1 year before or simultaneously to the measurement end date"
               },
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Antibody inhibitor, <=1 year before or simultaneously to the measurement end date" 
+                "title": "2 or more Antibody inhibitor, <=1 year before or simultaneously to the measurement end date"
               },
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Inhaled corticosteroids, <=1 year before or simultaneously to the measurement end date" 
+                "title": "2 or more Inhaled corticosteroids, <=1 year before or simultaneously to the measurement end date"
               },
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Inhaled steroid combinations, <=1 year before or simultaneously to the measurement end date" 
+                "title": "2 or more Inhaled steroid combinations, <=1 year before or simultaneously to the measurement end date"
               },
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Leukotriene inhibitors, <=1 year before or simultaneously to the measurement end date" 
+                "title": "2 or more Leukotriene inhibitors, <=1 year before or simultaneously to the measurement end date"
               },
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Long acting inhaled beta 2 agonist, <=1 year before or simultaneously to the measurement end date" 
+                "title": "2 or more Long acting inhaled beta 2 agonist, <=1 year before or simultaneously to the measurement end date"
               },
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Mast cell stabilizer, <=1 year before or simultaneously to the measurement end date" 
+                "title": "2 or more Mast cell stabilizer, <=1 year before or simultaneously to the measurement end date"
               },
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Methylxanthines, <=1 year before or simultaneously to the measurement end date" 
+                "title": "2 or more Methylxanthines, <=1 year before or simultaneously to the measurement end date"
               },
               {
                 "category": "Medication Active, Order or Dispensed",
-                "title": "2 or more Short acting beta 2 agonist, <=1 year before or simultaneously to the measurement end date" 
-              } 
-            ] 
-          } 
-        ] 
+                "title": "2 or more Short acting beta 2 agonist, <=1 year before or simultaneously to the measurement end date"
+              }
+            ]
+          }
+        ]
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Antiasthmatic combinations, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Antiasthmatic combinations, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Antibody inhibitor, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Antibody inhibitor, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Inhaled corticosteroids, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Inhaled corticosteroids, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Inhaled steroid combinations, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Inhaled steroid combinations, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Leukotriene inhibitors, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Leukotriene inhibitors, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Long acting inhaled beta 2 agonist, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Long acting inhaled beta 2 agonist, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Mast cell stabilizer, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Mast cell stabilizer, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Methylxanthines” within 1 year" 
+            "title": "4 or more Methylxanthines” within 1 year"
           },
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Short acting beta 2 agonist, <=1 year before or simultaneously to the measurement end date" 
-          } 
-        ] 
+            "title": "4 or more Short acting beta 2 agonist, <=1 year before or simultaneously to the measurement end date"
+          }
+        ]
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Medication Active, Order or Dispensed",
-            "title": "4 or more Leukotriene inhibitors, <=1 year before or simultaneously to the measurement end date" 
+            "title": "4 or more Leukotriene inhibitors, <=1 year before or simultaneously to the measurement end date"
           },
           {
             "category": "Diagnosis Active",
-            "title": "Asthma, <=1 year before or simultaneously to the measurement end date" 
-          } 
-        ] 
-      } 
-    ] 
+            "title": "Asthma, <=1 year before or simultaneously to the measurement end date"
+          }
+        ]
+      }
+    ]
   },
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication Active, Order or Dispensed",
-        "title": "1 or more Antiasthmatic combinations, <=1 year before or simultaneously to the measurement end date" 
+        "title": "1 or more Antiasthmatic combinations, <=1 year before or simultaneously to the measurement end date"
       },
       {
         "category": "Medication Active, Order or Dispensed",
-        "title": "1 or more Antibody inhibitor, <=1 year before or simultaneously to the measurement end date" 
+        "title": "1 or more Antibody inhibitor, <=1 year before or simultaneously to the measurement end date"
       },
       {
         "category": "Medication Active, Order or Dispensed",
-        "title": "1 or more Inhaled corticosteroids, <=1 year before or simultaneously to the measurement end date" 
+        "title": "1 or more Inhaled corticosteroids, <=1 year before or simultaneously to the measurement end date"
       },
       {
         "category": "Medication Active, Order or Dispensed",
-        "title": "1 or more Inhaled steroid combinations, <=1 year before or simultaneously to the measurement end date" 
+        "title": "1 or more Inhaled steroid combinations, <=1 year before or simultaneously to the measurement end date"
       },
       {
         "category": "Medication Active, Order or Dispensed",
-        "title": "1 or more Leukotriene inhibitors, <=1 year before or simultaneously to the measurement end date" 
+        "title": "1 or more Leukotriene inhibitors, <=1 year before or simultaneously to the measurement end date"
       },
       {
         "category": "Medication Active, Order or Dispensed",
-        "title": "1 or more Mast cell stabilizer, <=1 year before or simultaneously to the measurement end date" 
+        "title": "1 or more Mast cell stabilizer, <=1 year before or simultaneously to the measurement end date"
       },
       {
         "category": "Medication Active, Order or Dispensed",
-        "title": "1 or more Methylxanthines, <=1 year before or simultaneously to the measurement end date" 
-      } 
-    ] 
+        "title": "1 or more Methylxanthines, <=1 year before or simultaneously to the measurement end date"
+      }
+    ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Diagnosis Active",
-        "title": "COPD, before or simultaneously to the measurement end date" 
+        "title": "COPD, before or simultaneously to the measurement end date"
       },
       {
         "category": "Diagnosis Active",
-        "title": "Cystic Fibrosis, before or simultaneously to the measurement end date" 
+        "title": "Cystic Fibrosis, before or simultaneously to the measurement end date"
       },
       {
         "category": "Diagnosis Active",
-        "title": "Emphysema, before or simultaneously to the measurement end date" 
+        "title": "Emphysema, before or simultaneously to the measurement end date"
       },
       {
         "category": "Diagnosis Active",
-        "title": "Acute respiratory failure, before or simultaneously to the measurement end date" 
-      } 
-    ] 
+        "title": "Acute respiratory failure, before or simultaneously to the measurement end date"
+      }
+    ]
   }
 }

@@ -17,21 +17,22 @@
     "birthdate": {
       "description": "Date of birth",
       "critical": true,
-      "type":"number",
+      "type": "number",
       "format": "utc-sec",
       "codes": [
         {
           "set": "HL7",
           "version": "3.0",
-          "values": ["00110"]
+          "values": [
+            "00110"
+          ]
         }
       ]
     }
   },
-  "population":
-  {
-    "and":
-    [
+  "population": {
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient Characteristic",
         "title": "Age >= 18"
@@ -47,10 +48,9 @@
     ]
   },
   "denominator": {},
-  "numerator":
-  {
-    "and":
-    [
+  "numerator": {
+    "conjunction": "and",
+    "items": [
       {
         "category": "Physical Exam Finding",
         "title": "Systolic blood pressure"

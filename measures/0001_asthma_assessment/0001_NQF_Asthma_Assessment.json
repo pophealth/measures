@@ -7,34 +7,32 @@
   "category": "Asthma",
   "steward": "AMA",
   "parameters": {
-    "effective_date":
-    {
+    "effective_date": {
       "description": "Effective end date for measure",
       "type": "number",
       "format": "utc-sec"
     }
   },
-  "patient":  {
-    "birthdate":
-    {
+  "patient": {
+    "birthdate": {
       "description": "Date of birth",
       "critical": true,
       "type": "number",
       "format": "utc-sec",
-      "codes":
-      [
+      "codes": [
         {
           "set": "HL7",
           "version": "3.0",
-          "values": ["00110"]
+          "values": [
+            "00110"
+          ]
         }
       ]
     }
   },
-  "population":
-  {
-    "and":
-    [
+  "population": {
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient Characteristic",
         "title": "Age between 5 and 40"
@@ -50,13 +48,12 @@
     ]
   },
   "denominator": {},
-  "numerator":
-  {
-    "or":
-    [
+  "numerator": {
+    "conjunction": "or",
+    "items": [
       {
-        "and":
-        [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Symptom Assessed",
             "title": "Asthma Daytime Symptoms"
@@ -68,8 +65,8 @@
         ]
       },
       {
-        "and":
-        [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Symptom Assessed",
             "title": "Asthma Daytime Symptoms Quantified"

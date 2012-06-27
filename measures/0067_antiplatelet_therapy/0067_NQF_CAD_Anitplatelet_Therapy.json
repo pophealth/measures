@@ -31,13 +31,15 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "Coronary artery disease includes MI"
@@ -47,10 +49,10 @@
             "title": "Cardiac surgery performed"
           }
         ]
-        
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Encounter",
             "title": ">= 2 counts of outpatient encounter"
@@ -67,12 +69,13 @@
       }
     ]
   },
-  "denominator": {
-  },
+  "denominator": {},
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Medication order",
             "title": "Antiplatelet therapy"
@@ -86,7 +89,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication allergy",
         "title": "Antiplatelet therapy"

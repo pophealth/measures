@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
@@ -41,7 +42,8 @@
         "title": "Heart failure"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Encounter",
             "title": ">= 2 counts of outpatient"
@@ -55,9 +57,11 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnostic study result",
             "title": "LVF assessment < 40%"
@@ -71,9 +75,11 @@
     ]
   },
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Medication active",
             "title": "Beta-blocker therapy"
@@ -87,7 +93,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Diagnosis active",
         "title": "Arrhythmia"
@@ -101,7 +108,8 @@
         "title": "Asthma"
       },
       {
-        "and": [
+        "conjunction": "and",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "Atrioventricular block"

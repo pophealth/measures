@@ -31,7 +31,8 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age >= 18 years"
@@ -41,7 +42,8 @@
         "title": "Heart failure"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Encounter",
             "title": ">= 2 counts of outpatient encounter"
@@ -55,7 +57,8 @@
     ]
   },
   "denominator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Diagnosis active",
         "title": "Atrial fibrillation"
@@ -63,7 +66,8 @@
     ]
   },
   "numerator": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Medication active",
         "title": "Warfarin therapy"
@@ -75,7 +79,8 @@
     ]
   },
   "exclusions": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication allergy",
         "title": "Warfarin therapy"

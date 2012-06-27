@@ -31,13 +31,15 @@
     }
   },
   "population": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Patient characteristic",
         "title": "Age 5 to 40, inclusive"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Diagnosis active",
             "title": "Asthma, severity persistent"
@@ -54,10 +56,10 @@
       }
     ]
   },
-  "denominator": {
-  },
+  "denominator": {},
   "numerator": {
-    "or": [
+    "conjunction": "or",
+    "items": [
       {
         "category": "Medication order",
         "title": "Inhaled corticosteroid or alternative asthma medication ordered"
@@ -69,13 +71,15 @@
     ]
   },
   "exclusions": {
-    "and": [
+    "conjunction": "and",
+    "items": [
       {
         "category": "Medication not done",
         "title": "Patient reason"
       },
       {
-        "or": [
+        "conjunction": "or",
+        "items": [
           {
             "category": "Medication allergy",
             "title": "Inhaled corticosteroid or alternative asthma medication allergy"
