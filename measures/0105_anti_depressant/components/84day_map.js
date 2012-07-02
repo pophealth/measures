@@ -21,7 +21,8 @@ function() {
     }
     var all_encounters = normalize(measure.encounter_ed_encounter,
                                    measure.encounter_outpt_bh_req_pos_encounter,
-                                   measure.encounter_outpt_bh_encounter);
+                                   measure.encounter_outpt_bh_encounter,
+                                   measure.patient_encounter_bh_bh_req_pos_encounter_point_non_acute_inpatient_inpatient_encounter);
     var encounters_during_interval = inRange(all_encounters,
                                              earliest_encounter,
                                              latest_encounter);
@@ -32,7 +33,12 @@ function() {
                                                                   all_encounters,
                                                                   earliest_encounter,
                                                                   latest_encounter);
-    if (depression_during_encounter.length == 0) {
+
+    var depression_principal_during_encounter = allDiagnosesDuringEncounter(measure.major_depression_diagnosis_active_priority_principal,
+                                                                  all_encounters,
+                                                                  earliest_encounter,
+                                                                  latest_encounter);
+    if (depression_during_encounter.length <= 1 && depression_principal_during_encounter.length == 0) {
       return(false);
     }
 
