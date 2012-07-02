@@ -7,7 +7,7 @@
   "measures": {
     "0027": {
       "encounter_outpatient_encounter": [1249084800],              // Time.gm(2009, 8, 1)
-      "tobacco_user_physical_exam_finding": [1280620800]                       // Time.gm(2010, 8, 1)
+      "tobacco_user_patient_characteristic": [1280620800]                       // Time.gm(2010, 8, 1)
     }
   }
 }
